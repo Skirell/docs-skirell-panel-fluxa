@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тип sensor (Датчики) &mdash; документация Fluxa Docs </title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=372fde1a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=cd1d70c9"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="Тип light (Свет)" href="Type_light.html" />
+    <link rel="prev" title="Тип scene (Сценарий)" href="Type_scene.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Fluxa Docs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Интерфейс:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="JSON.html">Конфигурация файла JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Type_scene.html">Тип scene (Сценарий)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Тип sensor (Датчики)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Type_light.html">Тип light (Свет)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fluxa Docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Тип sensor (Датчики)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Интерфейс/Type_sensor.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sensor">
+<h1>Тип sensor (Датчики)<a class="headerlink" href="#sensor" title="Ссылка на этот заголовок"></a></h1>
+<p>Блок sensor отображает данные с датчиков. Подтипов нет. Параметры:</p>
+<ul class="simple">
+<li><p>param_1: Название датчика (String, обязательно).</p></li>
+<li><p>measure: Единица измерения (String, может быть пустым).</p></li>
+<li><p>min: Минимальное значение (String, обязательно).</p></li>
+<li><p>stage_1: Первая граница для цветового индикатора (String, обязательно).</p></li>
+<li><p>stage_2: Вторая граница для цветового индикатора (String, обязательно).</p></li>
+<li><p>max: Максимальное значение (String, обязательно).</p></li>
+<li><p>color_1: Цвет для значений ниже stage_1 (String, обязательно).</p></li>
+<li><p>color_2: Цвет для значений между stage_1 и stage_2 (String, обязательно).</p></li>
+<li><p>color_3: Цвет для значений выше stage_2 (String, обязательно).</p></li>
+<li><p>state_topic: Топик для получения данных (String, обязательно).</p></li>
+</ul>
+<p>Пример:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;block&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data&quot;</span><span class="p">:</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;param_1&quot;</span><span class="p">:</span> <span class="s2">&quot;Температура&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;measure&quot;</span><span class="p">:</span> <span class="s2">&quot;°C&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;stage_1&quot;</span><span class="p">:</span> <span class="s2">&quot;20&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;stage_2&quot;</span><span class="p">:</span> <span class="s2">&quot;30&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="s2">&quot;40&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;color_1&quot;</span><span class="p">:</span> <span class="s2">&quot;color_blue&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;color_2&quot;</span><span class="p">:</span> <span class="s2">&quot;color_green&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;color_3&quot;</span><span class="p">:</span> <span class="s2">&quot;color_red&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;state_topic&quot;</span><span class="p">:</span> <span class="s2">&quot;panel/sensor/1/state&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Пример:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;block&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data&quot;</span><span class="p">:</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;param_1&quot;</span><span class="p">:</span> <span class="s2">&quot;Интернет&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;measure&quot;</span><span class="p">:</span> <span class="s2">&quot;MB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;stage_1&quot;</span><span class="p">:</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;stage_2&quot;</span><span class="p">:</span> <span class="s2">&quot;8&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;color_1&quot;</span><span class="p">:</span> <span class="s2">&quot;color_red&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;color_2&quot;</span><span class="p">:</span> <span class="s2">&quot;color_yellow&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;color_3&quot;</span><span class="p">:</span> <span class="s2">&quot;color_green&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;state_topic&quot;</span><span class="p">:</span> <span class="s2">&quot;panel/sensor/2/state&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<img alt="../_images/block_sensor.png" src="../_images/block_sensor.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="Type_scene.html" class="btn btn-neutral float-left" title="Тип scene (Сценарий)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="Type_light.html" class="btn btn-neutral float-right" title="Тип light (Свет)" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Skirell. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
