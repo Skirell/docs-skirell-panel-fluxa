@@ -101,6 +101,18 @@ icon
     <br/><br/>
     <br/><br/>
 
+.. _light-variant_type:
+variant_type
+*****
+   Используется для указания названия варианта(типа) устройства-освещения.
+
+   :имя поля: ``variant_type``
+   :тип объекта: ``String``
+   :наличие значения: Обязательно
+   :ограничение строки: Только заданные значения
+   :варианты:
+      :``light_variant_OnOff``: вкл/выкл
+
 
 * ``variant_type``: Подтип (``light_variant_OnOff``, ``light_variant_dimmer``, ``light_variant_color``, ``light_variant_temperature``).
 * ``variant``: Параметры подтипа, представлены ниже для каждого варианта подтипа.
