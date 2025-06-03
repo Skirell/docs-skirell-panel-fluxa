@@ -104,18 +104,17 @@ icon
 .. _light-variant_type:
 variant_type
 ************
-   Используется для указания названия варианта(типа) устройства-освещения.
+   Используется для указания названия под-варианта(под-типа) устройства-освещения.
 
    * имя поля: ``variant_type``
    * тип объекта: ``String``
    * наличие значения: Обязательно
    * ограничение строки: Только заданные значения
-   * варианты: ниже 
-      * ``light_variant_OnOff``: вкл/выкл
-      * ``light_variant_dimmer``: вкл/выкл, яркость
+   * ``light_variant_OnOff``: вкл/выкл
+   * ``light_variant_dimmer``: вкл/выкл, яроксть
+   * ``light_variant_temperature``: вкл/выкл, яроксть, температура цвета
+   * ``light_variant_color``: вкл/выкл, яроксть, RGB цвета
 
-
-* ``variant_type``: Подтип (``light_variant_OnOff``, ``light_variant_dimmer``, ``light_variant_color``, ``light_variant_temperature``).
 * ``variant``: Параметры подтипа, представлены ниже для каждого варианта подтипа.
 
 Подтип light_variant_OnOff
