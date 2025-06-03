@@ -47,11 +47,21 @@ param_2
 
 .. image:: /images/block_param_2.png
 
-* ``setting_name``: Заголовок в настройках (String, обязательно).
-.. image:: /images/setting_name.png
-.. raw:: html
+.. _light-setting_name:
+setting_name
+*******
+   Используется для изменения текста в UI-настройках. Обычно можно продублировать значение из ``param_2``, но иногда бывают ситуации когда в блоке пришлось написать сокращенно, то в настрйоках можно написать полностью.
 
-    <br/><br/>
+   :имя поля: ``setting_name``
+   :тип объекта: ``String``
+   :наличие значения: Обязательно
+   :ограничение строки: 14 символов
+   :пример-1: ``"setting_name":"Люстра"``
+   :пример-2: ``"setting_name":"Точки"``
+   :пример-3: ``"setting_name":"Подсветка"``
+
+.. image:: /images/setting_name.png
+
 
 * ``icon``: Иконка (String - Unicode, обязательно).
 .. image:: /images/block_icon.png
