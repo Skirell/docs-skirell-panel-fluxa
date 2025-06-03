@@ -110,10 +110,9 @@ variant_type
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Только заданные значения
-   :варианты: список возможных вариантов
-   
-       * ``light_variant_OnOff``: вкл/выкл
-       * ``light_variant_dimmer``: вкл/выкл, яркость
+   :варианты: ниже 
+   * ``light_variant_OnOff``: вкл/выкл
+   * ``light_variant_dimmer``: вкл/выкл, яркость
 
 
 * ``variant_type``: Подтип (``light_variant_OnOff``, ``light_variant_dimmer``, ``light_variant_color``, ``light_variant_temperature``).
