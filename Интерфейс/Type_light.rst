@@ -7,8 +7,8 @@
 * :ref:`light-param_2` — локация или контекст использования.
 * :ref:`light-setting_name` — название устройства в настройках.
 * :ref:`light-icon` — иконка, отображаемая на блоке.
-* :ref:`light-variant_type` — название типа(варианта) настроект блока.
 * :ref:`light-variant` — объект с настройками тип(варианта) блока.
+* :ref:`light-variant_type` — название типа(варианта) настроект блока.
    * :ref:`light-light_variant_OnOff` - тип вкл/выкл.
    * :ref:`light-light_variant_dimmer` - тип вкл/выкл, яркость.
    * :ref:`light-light_variant_temperature` - тип вкл/выкл, яркость, температура света.
@@ -112,11 +112,21 @@ variant_type
    * ограничение строки: Только заданные значения
    * варианты:
       * ``light_variant_OnOff``: вкл/выкл
-      * ``light_variant_dimmer``: вкл/выкл, яроксть
-      * ``light_variant_temperature``: вкл/выкл, яроксть, температура цвета
-      * ``light_variant_color``: вкл/выкл, яроксть, RGB цвета
+      * ``light_variant_dimmer``: вкл/выкл, яркость
+      * ``light_variant_temperature``: вкл/выкл, яркость, температура цвета
+      * ``light_variant_color``: вкл/выкл, яркость, RGB цвета
 
-* ``variant``: Параметры подтипа, представлены ниже для каждого варианта подтипа.
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
+
+
+.. _light-variant:
+variant
+************
+   Хранит в себе все параметры выбранного под-варианта(под-типа) устройства-освещения. Ниже описаны параметры всех подтипов
+
 
 Подтип light_variant_OnOff
 --------------------------
