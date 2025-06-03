@@ -31,6 +31,10 @@ param_1
    :пример-3: ``"param_1":""``
 
 .. image:: /images/block_param_1.png
+.. raw:: html
+
+    <br/><br/>
+
 
 .. _light-param_2:
 param_2
@@ -46,6 +50,10 @@ param_2
    :пример-3: ``"param_2":"Кухня"``
 
 .. image:: /images/block_param_2.png
+.. raw:: html
+
+    <br/><br/>
+
 
 .. _light-setting_name:
 setting_name
@@ -61,6 +69,9 @@ setting_name
    :пример-3: ``"setting_name":"Подсветка"``
 
 .. image:: /images/setting_name.png
+.. raw:: html
+
+    <br/><br/>
 
 
 * ``icon``: Иконка (String - Unicode, обязательно).
