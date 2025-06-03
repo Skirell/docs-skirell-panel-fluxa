@@ -11,38 +11,20 @@
 * payload: Сообщение, отправляемое на топик MQTT.
 
 
-Подробнее про каждый параметр ниже:
+Детальный разбор параметров:
+----------------------------
 
-Creating recipes
-----------------
+.. function:: param_1
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+   Используется для текста, например указать что это Сценарий или Режим. Может также использоваться в других вариациях.
 
-get_random_ingredients
-----------------------
-
-.. function:: get_random_ingredients(kind=None)
-
-   Return a list of random ingredients as strings.
-
-   :param kind: Optional "kind" of ingredients.
-   :type kind: list[str] or None
-   :raises InvalidKindError: If the kind is invalid.
-   :return: The ingredients list.
-   :rtype: list[str]
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   :поле: param_1
+   :тип объекта: String
+   :наличие значения: Может быть пустым
+   :ограничение строки: 9 символов
+   :пример-1: "param_1":"Сцена"
+   :пример-2: "param_1":"Режим"
+   :пример-3: "param_1":""  
 
 
 Пример::
