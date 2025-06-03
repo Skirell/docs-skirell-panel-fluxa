@@ -14,6 +14,11 @@
    * :ref:`light-light_variant_temperature` - тип вкл/выкл, яркость, температура света.
    * :ref:`light-light_variant_color` - тип вкл/выкл, яркость, RGB цвет.
 
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
+
 Детальный разбор параметров:
 ----------------------------
 
@@ -34,6 +39,7 @@ param_1
 .. raw:: html
 
     <br/><br/>
+    <br/><br/>
 
 
 .. _light-param_2:
@@ -53,6 +59,7 @@ param_2
 .. raw:: html
 
     <br/><br/>
+    <br/><br/>
 
 
 .. _light-setting_name:
@@ -71,6 +78,7 @@ setting_name
 .. image:: /images/setting_name.png
 .. raw:: html
 
+    <br/><br/>
     <br/><br/>
 
 
