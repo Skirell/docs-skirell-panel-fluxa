@@ -120,7 +120,6 @@ variant_type
 .. raw:: html
 
     <br/><br/>
-    <br/><br/>
 
 
 .. _light-variant:
