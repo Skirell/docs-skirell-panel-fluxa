@@ -110,11 +110,11 @@ variant_type
    * тип объекта: ``String``
    * наличие значения: Обязательно
    * ограничение строки: Только заданные значения
-  
-   * ``light_variant_OnOff``: вкл/выкл
-   * ``light_variant_dimmer``: вкл/выкл, яроксть
-   * ``light_variant_temperature``: вкл/выкл, яроксть, температура цвета
-   * ``light_variant_color``: вкл/выкл, яроксть, RGB цвета
+   * Варианты::
+      * ``light_variant_OnOff``: вкл/выкл
+      * ``light_variant_dimmer``: вкл/выкл, яроксть
+      * ``light_variant_temperature``: вкл/выкл, яроксть, температура цвета
+      * ``light_variant_color``: вкл/выкл, яроксть, RGB цвета
 
 * ``variant``: Параметры подтипа, представлены ниже для каждого варианта подтипа.
 
