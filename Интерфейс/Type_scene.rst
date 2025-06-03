@@ -1,14 +1,36 @@
 Тип scene (Сценарий)
 ====================
 
-Блок scene отправляет команду на сервер при нажатии, не ожидая ответа и не открывая страницу настроек. Параметры:
+Блок scene только отправляет команду на сервер при нажатии. Параметры:
 
-* param_1: Назначение (String, может быть пустым).
-* param_2: Локация (String, может быть пустым).
-* param_3: Название (String, обязательно).
-* icon: Иконка (String, Unicode, обязательно).
-* command_topic: Топик для отправки команды на сервер (String, обязательно).
-* payload: Сообщение, отправляемое на сервер (String, обязательно).
+* param_1: Назначение.
+* param_2: Локация.
+* param_3: Название.
+* icon: Иконка.
+* command_topic: Топик MQTT.
+* payload: Сообщение, отправляемое на топик MQTT.
+
+
+Подробнее про каждый параметр ниже:
+Creating recipes
+----------------
+
+To retrieve a list of random ingredients,
+you can use the ``lumache.get_random_ingredients()`` function:
+
+.. autofunction:: lumache.get_random_ingredients
+
+The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
+or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
+will raise an exception.
+
+.. autoexception:: lumache.InvalidKindError
+
+For example:
+
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
 
 
 Пример::
