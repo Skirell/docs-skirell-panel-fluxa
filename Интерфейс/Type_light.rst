@@ -112,7 +112,8 @@ variant_type
    :ограничение строки: Только заданные значения
    :варианты:
    
-      * ``light_variant_OnOff``: вкл/выкл
+       * ``light_variant_OnOff``: вкл/выкл
+       * ``light_variant_dimmer``: вкл/выкл, яркость
 
 
 * ``variant_type``: Подтип (``light_variant_OnOff``, ``light_variant_dimmer``, ``light_variant_color``, ``light_variant_temperature``).
