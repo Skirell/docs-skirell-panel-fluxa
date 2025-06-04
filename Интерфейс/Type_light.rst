@@ -13,6 +13,7 @@
    * :ref:`light-light_variant_dimmer` — устройство с регулировкой яркости.
    * :ref:`light-light_variant_temperature` — устройство с регулировкой яркости и температуры цвета.
    * :ref:`light-light_variant_color` — устройство с регулировкой яркости и цвета (RGB).
+
 .. raw:: html
 
     <br/><br/>
