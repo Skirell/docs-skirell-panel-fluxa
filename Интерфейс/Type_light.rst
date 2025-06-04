@@ -111,10 +111,10 @@ variant_type
    * наличие значения: Обязательно
    * ограничение строки: Только заданные значения
    * варианты:
-      * ``light_variant_OnOff``: вкл/выкл
-      * ``light_variant_dimmer``: вкл/выкл, яркость
-      * ``light_variant_temperature``: вкл/выкл, яркость, температура цвета
-      * ``light_variant_color``: вкл/выкл, яркость, RGB цвета
+      * :ref:`light_variant_OnOff`: тип вкл/выкл
+      * :ref:`light_variant_dimmer`: тип вкл/выкл, яркость
+      * :ref:`light_variant_temperature`: тип вкл/выкл, яркость, температура цвета
+      * :ref:`light_variant_color`: тип вкл/выкл, яркость, RGB цвета
 
 
 .. raw:: html
@@ -127,7 +127,13 @@ variant
 *******
    Хранит в себе все параметры выбранного под-варианта(под-типа) устройства-освещения. Ниже описаны параметры всех подтипов
 
+.. raw:: html
 
+    <br/><br/>
+    <br/><br/>
+    <br/><br/>
+
+.. _light_variant_OnOff:
 Подтип light_variant_OnOff
 --------------------------
 
