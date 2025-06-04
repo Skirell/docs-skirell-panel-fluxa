@@ -9,10 +9,10 @@
 * :ref:`light-icon` — иконка, отображаемая на блоке.
 * :ref:`light-variant` — объект с параметрами выбранного варианта устройства.
 * :ref:`light-variant_type` — тип устройства (вариант функциональности):
-   * :ref:`light-light_variant_OnOff` — устройство с включением/выключением.
-   * :ref:`light-light_variant_dimmer` — устройство с регулировкой яркости.
-   * :ref:`light-light_variant_temperature` — устройство с регулировкой яркости и температуры цвета.
-   * :ref:`light-light_variant_color` — устройство с регулировкой яркости и цвета (RGB).
+   * :ref:`light_variant_OnOff` — устройство с включением/выключением.
+   * :ref:`light_variant_dimmer` — устройство с регулировкой яркости.
+   * :ref:`light_variant_temperature` — устройство с регулировкой яркости и температуры цвета.
+   * :ref:`light_variant_color` — устройство с регулировкой яркости и цвета (RGB).
 
 .. raw:: html
 
