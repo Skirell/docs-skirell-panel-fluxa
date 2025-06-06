@@ -364,8 +364,8 @@ light_variant_color
 
 Параметры ``variant``:
 
-* OnOff_command_topic: Командный MQTT-топик для отправки команды (String, обязательно).
-* OnOff_state_topic: MQTT-топик обратной связи для получения состояния (String, обязательно).
+* *OnOff_command_topic*: Командный MQTT-топик для отправки команды (String, обязательно).
+* *OnOff_state_topic*: MQTT-топик обратной связи для получения состояния (String, обязательно).
 * payload_on: Команда(Сообщение) для включения (String, обязательно).
 * payload_off: Команда(Сообщение) для выключения (String, обязательно).
 * brightness_command_topic: Командный MQTT-топик для отправки яркости (String, обязательно).
