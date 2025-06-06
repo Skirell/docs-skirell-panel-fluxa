@@ -18,6 +18,7 @@
 
 
 :ref:`light-full_settings`
+
 .. raw:: html
 
     <br/><br/>
@@ -439,6 +440,7 @@ brightness_scale
 
     <br/><br/>
     <br/><br/>
+
 
 .. _light-full_settings:
 Общий пример страницы всего света
