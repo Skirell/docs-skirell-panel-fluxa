@@ -1,6 +1,8 @@
 Тип light (Свет)
 =================
 
+.. image:: /images/lights/blocks.png
+
 Блок ``light`` предназначен для управления освещением и поддерживает четыре типа устройства. При кратковременном нажатии на блок отправляется команда включения или выключения (``payload_on`` / ``payload_off``). При длительном удержании открывается страница настроек блока (за исключением типа ``light_variant_OnOff``). Общие параметры:
 
 * :ref:`light-param_1` — назначение блока (например, тип устройства: «Люстра», «Подсветка»).
@@ -204,7 +206,7 @@ payload_off
             "param_2": "Двор",
             "setting_name": "Фонари",
             "icon": "\uDB84\uDC20",
-            "variant_type": "Light_variant_OnOff",
+            "variant_type": "light_variant_OnOff",
             "variant": 
             {
             "OnOff_command_topic": "panel/light/1/OnOff_command",
@@ -323,7 +325,7 @@ brightness_scale
             "param_2": "Спальня",
             "setting_name": "Торшеры",
             "icon": "\uDB85\uDFD1",
-            "variant_type": "Light_variant_dimmer",
+            "variant_type": "light_variant_dimmer",
             "variant": 
             {
                 "OnOff_command_topic": "panel/light/2/OnOff_command",
@@ -363,7 +365,7 @@ brightness_scale
         "data": {
             "param_1": "Подсветка",
             "param_2": "Раб. место",
-            "setting_name": "Раб. место",
+            "setting_name": "Рабочее место",
             "icon": "\uDB84\uDC51",
             "variant_type": "Light_variant_color",
             "variant": 
