@@ -146,15 +146,14 @@ light_variant_OnOff
 
 .. image:: /images/OnOffBlocks.png
 
-\* **Блок 1** - Состояние выкл, **Блок 2** - Состояние вкл.
-
 Параметры ``variant``:
 
-* **OnOff_command_topic**: Командный MQTT-топик для отправки команды (String, обязательно).
-* **OnOff_state_topic**: MQTT-топик обратной связи для получения состояния (String, обязательно).
-* **payload_on**: Команда(Сообщение) для включения (String, обязательно).
-* **payload_off**: Команда(Сообщение) для выключения (String, обязательно).
+* :ref:`light_variant_OnOff-OnOff_command_topic`: Командный MQTT-топик для отправки команды (String, обязательно).
+* :ref:`light_variant_OnOff-OnOff_state_topic`: MQTT-топик обратной связи для получения состояния (String, обязательно).
+* :ref:`light_variant_OnOff-payload_on`: Команда(Сообщение) для включения (String, обязательно).
+* :ref:`light_variant_OnOff-payload_off`: Команда(Сообщение) для выключения (String, обязательно).
 
+.. _light_variant_OnOff-OnOff_command_topic:
 OnOff_command_topic
 *******
    Командный MQTT-топик, куда отправляется команда.
@@ -167,6 +166,7 @@ OnOff_command_topic
    :пример-2: ``"OnOff_command_topic":"поменять"``
    :пример-3: ``"OnOff_command_topic":"поменять"``
 
+.. _light_variant_OnOff-OnOff_state_topic:
 OnOff_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения включения и выключения.
@@ -179,6 +179,7 @@ OnOff_state_topic
    :пример-2: ``"OnOff_state_topic":"поменять"``
    :пример-3: ``"OnOff_state_topic":"поменять"``
 
+.. _light_variant_OnOff-payload_on:
 payload_on
 *******
    команда включения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
@@ -191,6 +192,7 @@ payload_on
    :пример-2: ``"payload_on":"поменять"``
    :пример-3: ``"payload_on":"поменять"``
 
+.. _light_variant_OnOff-payload_off:
 payload_off
 *******
    команда выключения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
@@ -239,13 +241,13 @@ light_variant_dimmer
 
 Параметры ``variant``:
 
-* **OnOff_command_topic**: Командный MQTT-топик для отправки команды (String, обязательно).
-* **OnOff_state_topic**: MQTT-топик обратной связи для получения состояния (String, обязательно).
-* **payload_on**: Команда(Сообщение) для включения (String, обязательно).
-* **payload_off**: Команда(Сообщение) для выключения (String, обязательно).
-* **brightness_command_topic**: Командный MQTT-топик для отправки яркости (String, обязательно).
-* **brightness_state_topic**: MQTT-топик обратной связи для получения яркости (String, обязательно).
-* **brightness_scale**: Максимальное значение яркости (Integer, обязательно).
+* :ref:`light_variant_dimmer-OnOff_command_topic`: Командный MQTT-топик для отправки команды (String, обязательно).
+* :ref:`light_variant_dimmer-OnOff_state_topic`: MQTT-топик обратной связи для получения состояния (String, обязательно).
+* :ref:`light_variant_dimmer-payload_on`: Команда(Сообщение) для включения (String, обязательно).
+* :ref:`light_variant_dimmer-payload_off`: Команда(Сообщение) для выключения (String, обязательно).
+* :ref:`light_variant_dimmer-brightness_command_topic`: Командный MQTT-топик для отправки яркости (String, обязательно).
+* :ref:`light_variant_dimmer-brightness_state_topic`: MQTT-топик обратной связи для получения яркости (String, обязательно).
+* :ref:`light_variant_dimmer-brightness_scale`: Максимальное значение яркости (Integer, обязательно).
 
 OnOff_command_topic
 *******
@@ -364,14 +366,14 @@ light_variant_color
 
 Параметры ``variant``:
 
-* **OnOff_command_topic**: Командный MQTT-топик для отправки команды (String, обязательно).
-* **OnOff_state_topic**: MQTT-топик обратной связи для получения состояния (String, обязательно).
-* **payload_on**: Команда(Сообщение) для включения (String, обязательно).
-* **payload_off**: Команда(Сообщение) для выключения (String, обязательно).
-* **brightness_command_topic**: Командный MQTT-топик для отправки яркости (String, обязательно).
-* **brightness_state_topic**: MQTT-топик обратной связи для получения яркости (String, обязательно).
-* **brightness_scale**: Максимальное значение яркости (Integer, обязательно).
-* **color_command_topic**: Командный MQTT-топик для отправки цвета (String, обязательно).
+* :ref:`light_variant_color-OnOff_command_topic`: Командный MQTT-топик для отправки команды (String, обязательно).
+* :ref:`light_variant_color-OnOff_state_topic`: MQTT-топик обратной связи для получения состояния (String, обязательно).
+* :ref:`light_variant_color-payload_on`: Команда(Сообщение) для включения (String, обязательно).
+* :ref:`light_variant_color-payload_off`: Команда(Сообщение) для выключения (String, обязательно).
+* :ref:`light_variant_color-brightness_command_topic`: Командный MQTT-топик для отправки яркости (String, обязательно).
+* :ref:`light_variant_color-brightness_state_topic`: MQTT-топик обратной связи для получения яркости (String, обязательно).
+* :ref:`light_variant_color-brightness_scale`: Максимальное значение яркости (Integer, обязательно).
+* :ref:`light_variant_color-color_command_topic`: Командный MQTT-топик для отправки цвета (String, обязательно).
 
 OnOff_command_topic
 *******
@@ -496,17 +498,17 @@ light_variant_temperature
 
 Параметры ``variant``:
 
-* **OnOff_command_topic**: Командный MQTT-топик для отправки команды (String, обязательно).
-* **OnOff_state_topic**: MQTT-топик обратной связи для получения состояния (String, обязательно).
-* **payload_on**: Команда(Сообщение) для включения (String, обязательно).
-* **payload_off**: Команда(Сообщение) для выключения (String, обязательно).
-* **brightness_command_topic**: Командный MQTT-топик для отправки яркости (String, обязательно).
-* **brightness_state_topic**: MQTT-топик обратной связи для получения яркости (String, обязательно).
-* **brightness_scale**: Максимальное значение яркости (Integer, обязательно).
-* **temp_command_topic**: Командный MQTT-топик для отправки температуры (String, обязательно).
-* **temp_state_topic**: MQTT-топик обратной связи для получения температуры (String, обязательно).
-* **max_temp**: Максимальная температура (Integer, обязательно).
-* **min_temp**: Минимальная температура (Integer, обязательно).
+* :ref:`light_variant_temperature-OnOff_command_topic`: Командный MQTT-топик для отправки команды (String, обязательно).
+* :ref:`light_variant_temperature-OnOff_state_topic`: MQTT-топик обратной связи для получения состояния (String, обязательно).
+* :ref:`light_variant_temperature-payload_on`: Команда(Сообщение) для включения (String, обязательно).
+* :ref:`light_variant_temperature-payload_off`: Команда(Сообщение) для выключения (String, обязательно).
+* :ref:`light_variant_temperature-brightness_command_topic`: Командный MQTT-топик для отправки яркости (String, обязательно).
+* :ref:`light_variant_temperature-brightness_state_topic`: MQTT-топик обратной связи для получения яркости (String, обязательно).
+* :ref:`light_variant_temperature-brightness_scale`: Максимальное значение яркости (Integer, обязательно).
+* :ref:`light_variant_temperature-temp_command_topic`: Командный MQTT-топик для отправки температуры (String, обязательно).
+* :ref:`light_variant_temperature-temp_state_topic`: MQTT-топик обратной связи для получения температуры (String, обязательно).
+* :ref:`light_variant_temperature-max_temp`: Максимальная температура (Integer, обязательно).
+* :ref:`light_variant_temperature-min_temp`: Минимальная температура (Integer, обязательно).
 
 OnOff_command_topic
 *******
