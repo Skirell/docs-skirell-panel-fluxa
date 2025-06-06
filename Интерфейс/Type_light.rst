@@ -163,7 +163,7 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_command_topic":"поменять"``
+   :пример: ``"OnOff_command_topic":"panel/light/1/OnOff_command"``
 
 .. _light_variant_OnOff-OnOff_state_topic:
 OnOff_state_topic
@@ -174,7 +174,7 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_state_topic":"поменять"``
+   :пример: ``"OnOff_state_topic":"panel/light/1/OnOff_state"``
 
 .. _light_variant_OnOff-payload_on:
 payload_on
@@ -256,7 +256,7 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_command_topic":"поменять"``
+   :пример: ``"OnOff_command_topic":"panel/light/2/OnOff_command"``
 
 .. _light_variant_dimmer-OnOff_state_topic:
 OnOff_state_topic
@@ -267,7 +267,7 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_state_topic":"поменять"``
+   :пример: ``"OnOff_state_topic":"panel/light/2/OnOff_state"``
 
 .. _light_variant_dimmer-payload_on:
 payload_on
@@ -304,7 +304,7 @@ brightness_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"brightness_command_topic":"поменять"``
+   :пример: ``"brightness_command_topic":"panel/light/2/brightness_command"``
 
 .. _light_variant_dimmer-brightness_state_topic:
 brightness_state_topic
@@ -315,7 +315,7 @@ brightness_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"brightness_state_topic":"поменять"``
+   :пример: ``"brightness_state_topic":"panel/light/2/brightness_state"``
 
 .. _light_variant_dimmer-brightness_scale:
 brightness_scale
@@ -387,7 +387,7 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_command_topic":"поменять"``
+   :пример: ``"OnOff_command_topic":"panel/light/3/OnOff_command"``
 
 .. _light_variant_color-OnOff_state_topic:
 OnOff_state_topic
@@ -398,7 +398,7 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_state_topic":"поменять"``
+   :пример: ``"OnOff_state_topic":"panel/light/3/OnOff_state"``
 
 .. _light_variant_color-payload_on:
 payload_on
@@ -435,7 +435,7 @@ brightness_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"brightness_command_topic":"поменять"``
+   :пример: ``"brightness_command_topic":"panel/light/3/brightness_command"``
 
 .. _light_variant_color-brightness_state_topic:
 brightness_state_topic
@@ -446,7 +446,7 @@ brightness_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"brightness_state_topic":"поменять"``
+   :пример: ``"brightness_state_topic":"panel/light/3/brightness_state"``
 
 .. _light_variant_color-brightness_scale:
 brightness_scale
@@ -470,7 +470,7 @@ color_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"color_command_topic":"поменять"``
+   :пример: ``"color_command_topic":"panel/light/3/color_command"``
 
 
 Пример::
@@ -534,7 +534,7 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_command_topic":"поменять"``
+   :пример: ``"OnOff_command_topic":"panel/light/4/OnOff_command"``
 
 .. _light_variant_temperature-OnOff_state_topic:
 OnOff_state_topic
@@ -545,7 +545,7 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_state_topic":"поменять"``
+   :пример: ``"OnOff_state_topic":"panel/light/4/OnOff_state"``
 
 .. _light_variant_temperature-payload_on:
 payload_on
@@ -582,7 +582,7 @@ brightness_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"brightness_command_topic":"поменять"``
+   :пример: ``"brightness_command_topic":"panel/light/4/brightness_command"``
 
 .. _light_variant_temperature-brightness_state_topic:
 brightness_state_topic
@@ -593,7 +593,7 @@ brightness_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"brightness_state_topic":"поменять"``
+   :пример: ``"brightness_state_topic":"panel/light/4/brightness_state"``
 
 .. _light_variant_temperature-brightness_scale:
 brightness_scale
@@ -617,7 +617,7 @@ temp_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"temp_command_topic":"поменять"``
+   :пример: ``"temp_command_topic":"panel/light/4/temp_command"``
 
 .. _light_variant_temperature-temp_state_topic:
 temp_state_topic
@@ -628,7 +628,7 @@ temp_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"temp_state_topic":"поменять"``
+   :пример: ``"temp_state_topic":"panel/light/4/temp_state"``
 
 .. _light_variant_temperature-max_temp:
 max_temp
