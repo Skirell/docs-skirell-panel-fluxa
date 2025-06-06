@@ -441,6 +441,8 @@ brightness_scale
     <br/><br/>
 
 .. _light-full_settings:
+Общий пример страницы всего света
+
 Пример из всех типов::
 
     {
