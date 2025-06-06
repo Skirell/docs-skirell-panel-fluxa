@@ -17,7 +17,7 @@
    * :ref:`light_variant_color` — устройство с регулировкой яркости и цвета (RGB).
 
 
-:ref:`light-full_settings`
+Полный пример всего освещения: :ref:`light-full_settings`
 
 .. raw:: html
 
