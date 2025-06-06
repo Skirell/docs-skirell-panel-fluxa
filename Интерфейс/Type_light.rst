@@ -17,7 +17,8 @@
    * :ref:`light_variant_color` — устройство с регулировкой яркости и цвета (RGB).
 
 
-Полный пример всего освещения: :ref:`light-full_settings`
+Полный пример всего освещения:
+    * :ref:`light-full_settings`
 
 .. raw:: html
 
@@ -162,9 +163,7 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"OnOff_command_topic":"поменять"``
-   :пример-2: ``"OnOff_command_topic":"поменять"``
-   :пример-3: ``"OnOff_command_topic":"поменять"``
+   :пример: ``"OnOff_command_topic":"поменять"``
 
 .. _light_variant_OnOff-OnOff_state_topic:
 OnOff_state_topic
@@ -175,9 +174,7 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"OnOff_state_topic":"поменять"``
-   :пример-2: ``"OnOff_state_topic":"поменять"``
-   :пример-3: ``"OnOff_state_topic":"поменять"``
+   :пример: ``"OnOff_state_topic":"поменять"``
 
 .. _light_variant_OnOff-payload_on:
 payload_on
@@ -188,9 +185,9 @@ payload_on
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"payload_on":"поменять"``
-   :пример-2: ``"payload_on":"поменять"``
-   :пример-3: ``"payload_on":"поменять"``
+   :пример-1: ``"payload_on":"1"``
+   :пример-2: ``"payload_on":"ON"``
+   :пример-3: ``"payload_on":"true"``
 
 .. _light_variant_OnOff-payload_off:
 payload_off
@@ -201,9 +198,9 @@ payload_off
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"payload_off":"поменять"``
-   :пример-2: ``"payload_off":"поменять"``
-   :пример-3: ``"payload_off":"поменять"``
+   :пример-1: ``"payload_off":"0"``
+   :пример-2: ``"payload_off":"OFF"``
+   :пример-3: ``"payload_off":"false"``
 
 Пример::
 
@@ -249,6 +246,7 @@ light_variant_dimmer
 * :ref:`light_variant_dimmer-brightness_state_topic`: MQTT-топик обратной связи для получения яркости (String, обязательно).
 * :ref:`light_variant_dimmer-brightness_scale`: Максимальное значение яркости (Integer, обязательно).
 
+.. _light_variant_dimmer-OnOff_command_topic:
 OnOff_command_topic
 *******
    Командный MQTT-топик, куда отправляется команда.
@@ -257,10 +255,9 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"OnOff_command_topic":"поменять"``
-   :пример-2: ``"OnOff_command_topic":"поменять"``
-   :пример-3: ``"OnOff_command_topic":"поменять"``
+   :пример: ``"OnOff_command_topic":"поменять"``
 
+.. _light_variant_dimmer-OnOff_state_topic:
 OnOff_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения включения и выключения.
@@ -269,10 +266,9 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"OnOff_state_topic":"поменять"``
-   :пример-2: ``"OnOff_state_topic":"поменять"``
-   :пример-3: ``"OnOff_state_topic":"поменять"``
+   :пример: ``"OnOff_state_topic":"поменять"``
 
+.. _light_variant_dimmer-payload_on:
 payload_on
 *******
    команда включения, которая отправляется на командный MQTT-топик (``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
@@ -281,10 +277,11 @@ payload_on
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"payload_on":"поменять"``
-   :пример-2: ``"payload_on":"поменять"``
-   :пример-3: ``"payload_on":"поменять"``
+   :пример-1: ``"payload_on":"1"``
+   :пример-2: ``"payload_on":"ON"``
+   :пример-3: ``"payload_on":"true"``
 
+.. _light_variant_dimmer-payload_off:
 payload_off
 *******
    команда выключения, которая отправляется на командный MQTT-топик (``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
@@ -293,10 +290,11 @@ payload_off
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"payload_off":"поменять"``
-   :пример-2: ``"payload_off":"поменять"``
-   :пример-3: ``"payload_off":"поменять"``
+   :пример-1: ``"payload_off":"0"``
+   :пример-2: ``"payload_off":"OFF"``
+   :пример-3: ``"payload_off":"false"``
 
+.. _light_variant_dimmer-brightness_command_topic:
 brightness_command_topic
 *******
    Командный MQTT-топик, куда отправляется значение яркости.
@@ -305,10 +303,9 @@ brightness_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"brightness_command_topic":"поменять"``
-   :пример-2: ``"brightness_command_topic":"поменять"``
-   :пример-3: ``"brightness_command_topic":"поменять"``
+   :пример: ``"brightness_command_topic":"поменять"``
 
+.. _light_variant_dimmer-brightness_state_topic:
 brightness_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения со значением яркости.
@@ -317,11 +314,9 @@ brightness_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"brightness_state_topic":"поменять"``
-   :пример-2: ``"brightness_state_topic":"поменять"``
-   :пример-3: ``"brightness_state_topic":"поменять"``
+   :пример: ``"brightness_state_topic":"поменять"``
 
-
+.. _light_variant_dimmer-brightness_scale:
 brightness_scale
 *******
    Максимальное значение яркости.
@@ -330,9 +325,11 @@ brightness_scale
    :тип объекта: ``Integer``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример-1: ``"brightness_scale":"поменять"``
-   :пример-2: ``"brightness_scale":"поменять"``
-   :пример-3: ``"brightness_scale":"поменять"``
+   :пример-1: ``"brightness_scale":"100"``
+   :пример-2: ``"brightness_scale":"255"``
+   :пример-3: ``"brightness_scale":"1023"``
+
+
 Пример::
 
     {
@@ -357,6 +354,7 @@ brightness_scale
         }
     }
 
+
 .. _light_variant_color:
 light_variant_color
 ---------------------------
@@ -375,6 +373,7 @@ light_variant_color
 * :ref:`light_variant_color-brightness_scale`: Максимальное значение яркости (Integer, обязательно).
 * :ref:`light_variant_color-color_command_topic`: Командный MQTT-топик для отправки цвета (String, обязательно).
 
+.. _light_variant_color-OnOff_command_topic:
 OnOff_command_topic
 *******
    Командный MQTT-топик, куда отправляется команда.
@@ -385,6 +384,7 @@ OnOff_command_topic
    :ограничение строки: Нет ограничения
    :пример: ``"OnOff_command_topic":"поменять"``
 
+.. _light_variant_color-OnOff_state_topic:
 OnOff_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения включения и выключения.
@@ -395,6 +395,7 @@ OnOff_state_topic
    :ограничение строки: Нет ограничения
    :пример: ``"OnOff_state_topic":"поменять"``
 
+.. _light_variant_color-payload_on:
 payload_on
 *******
    команда включения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
@@ -407,6 +408,7 @@ payload_on
    :пример-2: ``"payload_on":"ON"``
    :пример-3: ``"payload_on":"true"``
 
+.. _light_variant_color-payload_off:
 payload_off
 *******
    команда выключения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
@@ -419,6 +421,7 @@ payload_off
    :пример-2: ``"payload_off":"OFF"``
    :пример-3: ``"payload_off":"false"``
 
+.. _light_variant_color-brightness_command_topic:
 brightness_command_topic
 *******
    Командный MQTT-топик, куда отправляется значение яркости.
@@ -429,6 +432,7 @@ brightness_command_topic
    :ограничение строки: Нет ограничения
    :пример: ``"brightness_command_topic":"поменять"``
 
+.. _light_variant_color-brightness_state_topic:
 brightness_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения со значением яркости.
@@ -439,7 +443,7 @@ brightness_state_topic
    :ограничение строки: Нет ограничения
    :пример: ``"brightness_state_topic":"поменять"``
 
-
+.. _light_variant_color-brightness_scale:
 brightness_scale
 *******
    Максимальное значение яркости.
@@ -452,6 +456,7 @@ brightness_scale
    :пример-2: ``"brightness_scale":255``
    :пример-3: ``"brightness_scale":1023``
 
+.. _light_variant_color-color_command_topic:
 color_command_topic
 *******
    Командный MQTT-топик, куда отправляется значение выбранного цвета в формате RGB. Пример сообщения ``255;0;0`` - красный цвет.
@@ -510,6 +515,7 @@ light_variant_temperature
 * :ref:`light_variant_temperature-max_temp`: Максимальная температура (Integer, обязательно).
 * :ref:`light_variant_temperature-min_temp`: Минимальная температура (Integer, обязательно).
 
+.. _light_variant_temperature-OnOff_command_topic:
 OnOff_command_topic
 *******
    Командный MQTT-топик, куда отправляется команда.
@@ -520,6 +526,7 @@ OnOff_command_topic
    :ограничение строки: Нет ограничения
    :пример: ``"OnOff_command_topic":"поменять"``
 
+.. _light_variant_temperature-OnOff_state_topic:
 OnOff_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения включения и выключения.
@@ -530,6 +537,7 @@ OnOff_state_topic
    :ограничение строки: Нет ограничения
    :пример: ``"OnOff_state_topic":"поменять"``
 
+.. _light_variant_temperature-payload_on:
 payload_on
 *******
    команда включения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
@@ -542,6 +550,7 @@ payload_on
    :пример-2: ``"payload_on":"ON"``
    :пример-3: ``"payload_on":"true"``
 
+.. _light_variant_temperature-payload_off:
 payload_off
 *******
    команда выключения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если приходит такая команда на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
@@ -554,6 +563,7 @@ payload_off
    :пример-2: ``"payload_off":"OFF"``
    :пример-3: ``"payload_off":"false"``
 
+.. _light_variant_temperature-brightness_command_topic:
 brightness_command_topic
 *******
    Командный MQTT-топик, куда отправляется значение яркости.
@@ -564,6 +574,7 @@ brightness_command_topic
    :ограничение строки: Нет ограничения
    :пример: ``"brightness_command_topic":"поменять"``
 
+.. _light_variant_temperature-brightness_state_topic:
 brightness_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения со значением яркости.
@@ -574,7 +585,7 @@ brightness_state_topic
    :ограничение строки: Нет ограничения
    :пример: ``"brightness_state_topic":"поменять"``
 
-
+.. _light_variant_temperature-brightness_scale:
 brightness_scale
 *******
    Максимальное значение яркости.
@@ -587,6 +598,7 @@ brightness_scale
    :пример-2: ``"brightness_scale":255``
    :пример-3: ``"brightness_scale":1023``
 
+.. _light_variant_temperature-temp_command_topic:
 temp_command_topic
 *******
    Командный MQTT-топик, куда отправляется значение температуры света.
@@ -597,6 +609,7 @@ temp_command_topic
    :ограничение строки: Нет ограничения
    :пример: ``"temp_command_topic":"поменять"``
 
+.. _light_variant_temperature-temp_state_topic:
 temp_state_topic
 *******
    MQTT-топик обратной связи, куда должны приходить сообщения со значением температуры света.
@@ -607,6 +620,7 @@ temp_state_topic
    :ограничение строки: Нет ограничения
    :пример: ``"temp_state_topic":"поменять"``
 
+.. _light_variant_temperature-max_temp:
 max_temp
 *******
    Максимальное значение температуры света.
@@ -617,6 +631,7 @@ max_temp
    :ограничение строки: Нет ограничения
    :пример: ``"max_temp":6500``
 
+.. _light_variant_temperature-min_temp:
 min_temp
 *******
    Минимальное значение температуры света.
@@ -667,93 +682,93 @@ min_temp
 Пример из всех типов::
 
     {
-    "screens": [
-        {
-        "page": 1,
-        "blocks": [
+        "screens": [
             {
-            "block": 1,
-            "type": "light",
-            "data": {
-                "param_1": "Фонари",
-                "param_2": "Двор",
-                "setting_name": "Фонари",
-                "icon": "\uDB84\uDC20",
-                "variant_type": "Light_variant_OnOff",
-                "variant": {
-                "OnOff_command_topic": "panel/light/1/OnOff_command",
-                "OnOff_state_topic": "panel/light/1/OnOff_state",
-                "payload_on": "1",
-                "payload_off": "0"
+            "page": 1,
+            "blocks": [
+                {
+                "block": 1,
+                "type": "light",
+                "data": {
+                    "param_1": "Фонари",
+                    "param_2": "Двор",
+                    "setting_name": "Фонари",
+                    "icon": "\uDB84\uDC20",
+                    "variant_type": "Light_variant_OnOff",
+                    "variant": {
+                    "OnOff_command_topic": "panel/light/1/OnOff_command",
+                    "OnOff_state_topic": "panel/light/1/OnOff_state",
+                    "payload_on": "1",
+                    "payload_off": "0"
+                    }
                 }
-            }
-            },
-            {
-            "block": 2,
-            "type": "light",
-            "data": {
-                "param_1": "Торшеры",
-                "param_2": "Спальня",
-                "setting_name": "Торшеры",
-                "icon": "\uDB85\uDFD1",
-                "variant_type": "Light_variant_dimmer",
-                "variant": {
-                "OnOff_command_topic": "panel/light/2/OnOff_command",
-                "OnOff_state_topic": "panel/light/2/OnOff_state",
-                "payload_on": "1",
-                "payload_off": "0",
-                "brightness_command_topic": "panel/light/2/brightness_command",
-                "brightness_state_topic": "panel/light/2/brightness_state",
-                "brightness_scale": 255
+                },
+                {
+                "block": 2,
+                "type": "light",
+                "data": {
+                    "param_1": "Торшеры",
+                    "param_2": "Спальня",
+                    "setting_name": "Торшеры",
+                    "icon": "\uDB85\uDFD1",
+                    "variant_type": "Light_variant_dimmer",
+                    "variant": {
+                    "OnOff_command_topic": "panel/light/2/OnOff_command",
+                    "OnOff_state_topic": "panel/light/2/OnOff_state",
+                    "payload_on": "1",
+                    "payload_off": "0",
+                    "brightness_command_topic": "panel/light/2/brightness_command",
+                    "brightness_state_topic": "panel/light/2/brightness_state",
+                    "brightness_scale": 255
+                    }
                 }
-            }
-            },
-            {
-            "block": 3,
-            "type": "light",
-            "data": {
-                "param_1": "Подсветка",
-                "param_2": "Раб. место",
-                "setting_name": "Подсветка",
-                "icon": "\uDB84\uDC51",
-                "variant_type": "Light_variant_color",
-                "variant": {
-                "OnOff_command_topic": "panel/light/3/OnOff_command",
-                "OnOff_state_topic": "panel/light/3/OnOff_state",
-                "payload_on": "1",
-                "payload_off": "0",
-                "brightness_command_topic": "panel/light/3/brightness_command",
-                "brightness_state_topic": "panel/light/3/brightness_state",
-                "brightness_scale": 100,
-                "color_command_topic": "panel/light/3/color_command"
+                },
+                {
+                "block": 3,
+                "type": "light",
+                "data": {
+                    "param_1": "Подсветка",
+                    "param_2": "Раб. место",
+                    "setting_name": "Подсветка",
+                    "icon": "\uDB84\uDC51",
+                    "variant_type": "Light_variant_color",
+                    "variant": {
+                    "OnOff_command_topic": "panel/light/3/OnOff_command",
+                    "OnOff_state_topic": "panel/light/3/OnOff_state",
+                    "payload_on": "1",
+                    "payload_off": "0",
+                    "brightness_command_topic": "panel/light/3/brightness_command",
+                    "brightness_state_topic": "panel/light/3/brightness_state",
+                    "brightness_scale": 100,
+                    "color_command_topic": "panel/light/3/color_command"
+                    }
                 }
-            }
-            },
-            {
-            "block": 4,
-            "type": "light",
-            "data": {
-                "param_1": "",
-                "param_2": "Свесы",
-                "setting_name": "Свесы",
-                "icon": "\uDB86\uDCDE",
-                "variant_type": "Light_variant_temperature",
-                "variant": {
-                "OnOff_command_topic": "panel/light/4/OnOff_command",
-                "OnOff_state_topic": "panel/light/4/OnOff_state",
-                "payload_on": "1",
-                "payload_off": "0",
-                "brightness_command_topic": "panel/light/4/brightness_command",
-                "brightness_state_topic": "panel/light/4/brightness_state",
-                "brightness_scale": 100,
-                "temp_command_topic": "panel/light/4/temp_command",
-                "temp_state_topic": "panel/light/4/temp_state",
-                "max_temp": 6500,
-                "min_temp": 2700
+                },
+                {
+                "block": 4,
+                "type": "light",
+                "data": {
+                    "param_1": "",
+                    "param_2": "Свесы",
+                    "setting_name": "Свесы",
+                    "icon": "\uDB86\uDCDE",
+                    "variant_type": "Light_variant_temperature",
+                    "variant": {
+                    "OnOff_command_topic": "panel/light/4/OnOff_command",
+                    "OnOff_state_topic": "panel/light/4/OnOff_state",
+                    "payload_on": "1",
+                    "payload_off": "0",
+                    "brightness_command_topic": "panel/light/4/brightness_command",
+                    "brightness_state_topic": "panel/light/4/brightness_state",
+                    "brightness_scale": 100,
+                    "temp_command_topic": "panel/light/4/temp_command",
+                    "temp_state_topic": "panel/light/4/temp_state",
+                    "max_temp": 6500,
+                    "min_temp": 2700
+                    }
                 }
-            }
+                }
+            ]
             }
         ]
-        }
-    ]
     }
