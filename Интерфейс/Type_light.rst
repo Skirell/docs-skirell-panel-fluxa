@@ -380,13 +380,6 @@ brightness_scale
         }
     }
 
-.. image:: /images/block_rgb.png
-
-.. image:: /images/setting_rgb_1.png
-    
-.. image:: /images/setting_rgb_2.png
-    
-.. image:: /images/setting_rgb_3.png
 
 Подтип light_variant_temperature
 -----------------------------------
@@ -438,7 +431,3 @@ brightness_scale
         }
     }
 
-
-.. image:: /images/block_dimmer_temp.png
-
-.. image:: /images/setting_dimmer_temp.png
