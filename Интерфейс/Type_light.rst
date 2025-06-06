@@ -16,6 +16,8 @@
    * :ref:`light_variant_temperature` — устройство с регулировкой яркости и температуры цвета.
    * :ref:`light_variant_color` — устройство с регулировкой яркости и цвета (RGB).
 
+
+:ref:`light-full_settings`
 .. raw:: html
 
     <br/><br/>
@@ -438,8 +440,9 @@ brightness_scale
     <br/><br/>
     <br/><br/>
 
+.. _light-full_settings:
 Пример из всех типов::
-    
+
     {
     "screens": [
         {
