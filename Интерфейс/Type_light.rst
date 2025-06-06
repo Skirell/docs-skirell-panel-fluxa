@@ -224,9 +224,10 @@ payload_off
         }
     }
 
-.. image:: /images/1.png
+.. raw:: html
 
-\* Пример введенного блока
+    <br/><br/>
+    <br/><br/>
 
 ..  _light_variant_dimmer:
 light_variant_dimmer
@@ -354,6 +355,10 @@ brightness_scale
         }
     }
 
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
 
 .. _light_variant_color:
 light_variant_color
@@ -492,6 +497,11 @@ color_command_topic
             }
         }
     }
+
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
 
 .. _light_variant_temperature:
 light_variant_temperature
