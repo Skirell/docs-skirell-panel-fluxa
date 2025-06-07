@@ -1,5 +1,5 @@
 Тип light (Свет)
-=================
+================
 
 .. image:: /images/lights/blocks.png
 
@@ -141,7 +141,7 @@ variant
 
 .. _light_variant_OnOff:
 light_variant_OnOff
---------------------------
+-------------------
 
 Отправляет команду включения или выключения (``payload_on`` / ``payload_off``) на командный MQTT-топик ``OnOff_command_topic``, а также отслеживает состояние устройства через MQTT-топик обратной связи ``OnOff_state_topic`` для обновления элементов интерфейса.
 
@@ -156,7 +156,7 @@ light_variant_OnOff
 
 .. _light_variant_OnOff-OnOff_command_topic:
 OnOff_command_topic
-*******
+*******************
    Командный MQTT-топик, куда отправляется команда.
 
    :имя поля: ``OnOff_command_topic``
@@ -167,7 +167,7 @@ OnOff_command_topic
 
 .. _light_variant_OnOff-OnOff_state_topic:
 OnOff_state_topic
-*******
+*****************
    MQTT-топик обратной связи, куда приходят сообщения включения и выключения.
 
    :имя поля: ``OnOff_state_topic``
@@ -178,7 +178,7 @@ OnOff_state_topic
 
 .. _light_variant_OnOff-payload_on:
 payload_on
-*******
+**********
    команда включения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
 
    :имя поля: ``payload_on``
@@ -191,7 +191,7 @@ payload_on
 
 .. _light_variant_OnOff-payload_off:
 payload_off
-*******
+***********
    команда выключения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
 
    :имя поля: ``payload_off``
@@ -231,7 +231,7 @@ payload_off
 
 ..  _light_variant_dimmer:
 light_variant_dimmer
----------------------------
+--------------------
 
 Отправляет указанную команду включения или выключения (``payload_on`` / ``payload_off``) на командный MQTT-топик ``OnOff_command_topic``, а также отслеживает состояние устройства через MQTT-топик обратной связи ``OnOff_state_topic`` для обновления элементов интерфейса. В дополнении к этому отправляет значение яркости (``brightness_scale``) на командный MQTT-топик ``brightness_command_topic`` значение яркости, прослушивает MQTT-топик обратной связи ``brightness_state_topic`` для изменения состояния элементов интерфейса.
 
@@ -249,7 +249,7 @@ light_variant_dimmer
 
 .. _light_variant_dimmer-OnOff_command_topic:
 OnOff_command_topic
-*******
+*******************
    Командный MQTT-топик, куда отправляется команда.
 
    :имя поля: ``OnOff_command_topic``
@@ -260,7 +260,7 @@ OnOff_command_topic
 
 .. _light_variant_dimmer-OnOff_state_topic:
 OnOff_state_topic
-*******
+*****************
    MQTT-топик обратной связи, куда приходят сообщения включения и выключения.
 
    :имя поля: ``OnOff_state_topic``
@@ -271,7 +271,7 @@ OnOff_state_topic
 
 .. _light_variant_dimmer-payload_on:
 payload_on
-*******
+**********
    команда включения, которая отправляется на командный MQTT-топик (``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
 
    :имя поля: ``payload_on``
@@ -284,7 +284,7 @@ payload_on
 
 .. _light_variant_dimmer-payload_off:
 payload_off
-*******
+***********
    команда выключения, которая отправляется на командный MQTT-топик (``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
 
    :имя поля: ``payload_off``
@@ -297,7 +297,7 @@ payload_off
 
 .. _light_variant_dimmer-brightness_command_topic:
 brightness_command_topic
-*******
+************************
    Командный MQTT-топик, куда отправляется значение яркости.
 
    :имя поля: ``brightness_command_topic``
@@ -308,7 +308,7 @@ brightness_command_topic
 
 .. _light_variant_dimmer-brightness_state_topic:
 brightness_state_topic
-*******
+**********************
    MQTT-топик обратной связи, куда приходят сообщения со значением яркости.
 
    :имя поля: ``brightness_state_topic``
@@ -319,7 +319,7 @@ brightness_state_topic
 
 .. _light_variant_dimmer-brightness_scale:
 brightness_scale
-*******
+****************
    Максимальное значение яркости.
 
    :имя поля: ``brightness_scale``
@@ -362,7 +362,7 @@ brightness_scale
 
 .. _light_variant_color:
 light_variant_color
----------------------------
+-------------------
 Отправляет указанную команду включения/выключения на командный MQTT-топик, а также прослушивает MQTT-топик обратной связи для изменения состояния элементов интерфейса. В дополнении к этому отправляет значение яркости на командный MQTT-топик значение яркости, прослушивает MQTT-топик обратной связи для изменения состояния элементов интерфейса. Помимо этого, отправляет выбранный цвет на командный MQTT-топик (RGB).
 
 .. image:: /images/lights/color_block_and_page.png
@@ -380,7 +380,7 @@ light_variant_color
 
 .. _light_variant_color-OnOff_command_topic:
 OnOff_command_topic
-*******
+*******************
    Командный MQTT-топик, куда отправляется команда.
 
    :имя поля: ``OnOff_command_topic``
@@ -391,7 +391,7 @@ OnOff_command_topic
 
 .. _light_variant_color-OnOff_state_topic:
 OnOff_state_topic
-*******
+*****************
    MQTT-топик обратной связи, куда приходят сообщения включения и выключения.
 
    :имя поля: ``OnOff_state_topic``
@@ -402,7 +402,7 @@ OnOff_state_topic
 
 .. _light_variant_color-payload_on:
 payload_on
-*******
+**********
    команда включения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
 
    :имя поля: ``payload_on``
@@ -415,7 +415,7 @@ payload_on
 
 .. _light_variant_color-payload_off:
 payload_off
-*******
+***********
    команда выключения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
 
    :имя поля: ``payload_off``
@@ -428,7 +428,7 @@ payload_off
 
 .. _light_variant_color-brightness_command_topic:
 brightness_command_topic
-*******
+************************
    Командный MQTT-топик, куда отправляется значение яркости.
 
    :имя поля: ``brightness_command_topic``
@@ -439,7 +439,7 @@ brightness_command_topic
 
 .. _light_variant_color-brightness_state_topic:
 brightness_state_topic
-*******
+**********************
    MQTT-топик обратной связи, куда приходят сообщения со значением яркости.
 
    :имя поля: ``brightness_state_topic``
@@ -450,7 +450,7 @@ brightness_state_topic
 
 .. _light_variant_color-brightness_scale:
 brightness_scale
-*******
+****************
    Максимальное значение яркости.
 
    :имя поля: ``brightness_scale``
@@ -463,7 +463,7 @@ brightness_scale
 
 .. _light_variant_color-color_command_topic:
 color_command_topic
-*******
+*******************
    Командный MQTT-топик, куда отправляется значение выбранного цвета в формате RGB. Пример сообщения ``255;0;0`` - красный цвет.
 
    :имя поля: ``color_command_topic``
@@ -505,7 +505,7 @@ color_command_topic
 
 .. _light_variant_temperature:
 light_variant_temperature
------------------------------------
+-------------------------
 
 Добавляет регулировку цветовой температуры.
 
@@ -527,7 +527,7 @@ light_variant_temperature
 
 .. _light_variant_temperature-OnOff_command_topic:
 OnOff_command_topic
-*******
+*******************
    Командный MQTT-топик, куда отправляется команда.
 
    :имя поля: ``OnOff_command_topic``
@@ -538,7 +538,7 @@ OnOff_command_topic
 
 .. _light_variant_temperature-OnOff_state_topic:
 OnOff_state_topic
-*******
+*****************
    MQTT-топик обратной связи, куда приходят сообщения включения и выключения.
 
    :имя поля: ``OnOff_state_topic``
@@ -549,7 +549,7 @@ OnOff_state_topic
 
 .. _light_variant_temperature-payload_on:
 payload_on
-*******
+**********
    команда включения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «включено».
 
    :имя поля: ``payload_on``
@@ -562,7 +562,7 @@ payload_on
 
 .. _light_variant_temperature-payload_off:
 payload_off
-*******
+***********
    команда выключения, которая отправляется на командный MQTT-топик(``OnOff_command_topic``) и если такая команда приходит на MQTT-топик обратной связи (``OnOff_state_topic``), интерфейс обновляется на состояние «выключено».
 
    :имя поля: ``payload_off``
@@ -575,7 +575,7 @@ payload_off
 
 .. _light_variant_temperature-brightness_command_topic:
 brightness_command_topic
-*******
+************************
    Командный MQTT-топик, куда отправляется значение яркости.
 
    :имя поля: ``brightness_command_topic``
@@ -586,7 +586,7 @@ brightness_command_topic
 
 .. _light_variant_temperature-brightness_state_topic:
 brightness_state_topic
-*******
+**********************
    MQTT-топик обратной связи, куда приходят сообщения со значением яркости.
 
    :имя поля: ``brightness_state_topic``
@@ -597,7 +597,7 @@ brightness_state_topic
 
 .. _light_variant_temperature-brightness_scale:
 brightness_scale
-*******
+****************
    Максимальное значение яркости.
 
    :имя поля: ``brightness_scale``
@@ -610,7 +610,7 @@ brightness_scale
 
 .. _light_variant_temperature-temp_command_topic:
 temp_command_topic
-*******
+******************
    Командный MQTT-топик, куда отправляется значение температуры света.
 
    :имя поля: ``temp_command_topic``
@@ -621,7 +621,7 @@ temp_command_topic
 
 .. _light_variant_temperature-temp_state_topic:
 temp_state_topic
-*******
+****************
    MQTT-топик обратной связи, куда приходят сообщения со значением температуры света.
 
    :имя поля: ``temp_state_topic``
@@ -632,7 +632,7 @@ temp_state_topic
 
 .. _light_variant_temperature-max_temp:
 max_temp
-*******
+********
    Максимальное значение температуры света.
 
    :имя поля: ``max_temp``
@@ -643,7 +643,7 @@ max_temp
 
 .. _light_variant_temperature-min_temp:
 min_temp
-*******
+********
    Минимальное значение температуры света.
 
    :имя поля: ``min_temp``
@@ -688,6 +688,7 @@ min_temp
 
 .. _light-full_settings:
 Общий пример страницы всего света
+=================================
 
 Пример из всех типов::
 
@@ -703,7 +704,7 @@ min_temp
                      "param_1": "Фонари",
                      "param_2": "Двор",
                      "setting_name": "Фонари",
-                     "icon": "󱀠",
+                     "icon": "\uDB84\uDC20",
                      "variant_type": "light_variant_OnOff",
                      "variant": {
                         "OnOff_command_topic": "panel/light/1/OnOff_command",
@@ -720,7 +721,7 @@ min_temp
                      "param_1": "Торшеры",
                      "param_2": "Спальня",
                      "setting_name": "Торшеры",
-                     "icon": "󱟑",
+                     "icon": "\uDB85\uDFD1",
                      "variant_type": "light_variant_dimmer",
                      "variant": {
                         "OnOff_command_topic": "panel/light/2/OnOff_command",
@@ -740,7 +741,7 @@ min_temp
                      "param_1": "Подсветка",
                      "param_2": "Раб. место",
                      "setting_name": "Подсветка",
-                     "icon": "󱁑",
+                     "icon": "\uDB84\uDC51",
                      "variant_type": "light_variant_color",
                      "variant": {
                         "OnOff_command_topic": "panel/light/3/OnOff_command",
@@ -761,7 +762,7 @@ min_temp
                      "param_1": "",
                      "param_2": "Свесы",
                      "setting_name": "Свесы",
-                     "icon": "󱣞",
+                     "icon": "\uDB86\uDCDE",
                      "variant_type": "light_variant_temperature",
                      "variant": {
                         "OnOff_command_topic": "panel/light/4/OnOff_command",
