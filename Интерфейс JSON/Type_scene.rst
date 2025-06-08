@@ -1,6 +1,8 @@
 Тип scene (Сценарий)
 ====================
 
+.. image:: /images/scene/blocks.png
+
 Сценарный блок создаётся в основном меню и используется для активации сценариев или режимов пользователем. При нажатии на блок панель отправляет соответствующее сообщение в указанный MQTT-топик. 
 Параметры:
 
@@ -11,6 +13,14 @@
 - :ref:`scene-command_topic` — MQTT-топик для отправки команды.
 - :ref:`scene-payload` — команда, отправляемая при нажатии.
 
+
+Полный пример сценариев с верхнего изображения:
+    * :ref:`scene-full_example`
+
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
 
 Детальный разбор параметров:
 ----------------------------
@@ -117,36 +127,66 @@ payload
    :ограничение строки: нет ограничения
    :пример: ``"payload":"1"``
 
-Примеры
--------
 
-Пример для двух блоков::
+.. _scene-full_example:
+Полный пример сценариев
+---------------------------------
+Пример::
 
-    {
-        "block": 1,
-        "type": "scene",
-        "data": 
-        {
-            "param_1": "Сцена",
-            "param_2": "Гостинная",
-            "param_3": "Вечеринка",
-            "icon": "\uDB84\uDC56",
-            "command_topic": "panel/scenes/1",
-            "payload": "1"
-        }
-    },
-    {
-        "block": 2,
-        "type": "scene",
-        "data": 
-        {
-            "param_1": "",
-            "param_2": "Режим",
-            "param_3": "Чтение",
-            "icon": "\uDB84\uDC56",
-            "command_topic": "/devices/panel/controls/scenes/on",
-            "payload": "reading"
-        }
-    }
-
-.. image:: /images/block_scene.png
+   {
+      "screens": [
+         {
+            "page": 1,
+            "blocks": [
+               {
+                  "block": 1,
+                  "type": "scene",
+                  "data": {
+                     "param_1": "Сцена",
+                     "param_2": "Двор",
+                     "param_3": "Вечер",
+                     "icon": "\uDB81\uDD94",
+                     "command_topic": "panel/scenes/1",
+                     "payload": "1"
+                  }
+               },
+               {
+                  "block": 2,
+                  "type": "scene",
+                  "data": {
+                     "param_1": "Сцена",
+                     "param_2": "Гостинная",
+                     "param_3": "Кино",
+                     "icon": "\uDB81\uDC2E",
+                     "command_topic": "panel/scenes/2",
+                     "payload": "1"
+                  }
+               },
+               {
+                  "block": 3,
+                  "type": "scene",
+                  "data": {
+                     "param_1": "Сцена",
+                     "param_2": "Кухня",
+                     "param_3": "Ужин",
+                     "icon": "\uDB81\uDCA3",
+                     "command_topic": "panel/scenes/3",
+                     "payload": "1"
+                  }
+               },
+               {
+                  "block": 4,
+                  "type": "scene",
+                  "data": {
+                     "param_1": "Сцена",
+                     "param_2": "Дом",
+                     "param_3": "Выкл все",
+                     "icon": "\uDB82\uDD06",
+                     "command_topic": "panel/scenes/4",
+                     "payload": "1"
+                  }
+               }
+            ]
+         }
+      ]
+   }
