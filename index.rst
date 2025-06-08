@@ -9,12 +9,12 @@ Fluxa Docs documentation
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Интерфейс:
+   :caption: Интерфейс JSON:
 
-   Интерфейс/JSON
-   Интерфейс/Type_scene
-   Интерфейс/Type_sensor
-   Интерфейс/Type_light
-   Интерфейс/Type_cover
-   Интерфейс/Type_climate
-   Интерфейс/Type_cover
+   Интерфейс JSON/JSON
+   Интерфейс JSON/Type_scene
+   Интерфейс JSON/Type_sensor
+   Интерфейс JSON/Type_light
+   Интерфейс JSON/Type_cover
+   Интерфейс JSON/Type_climate
+   Интерфейс JSON/Type_cover
