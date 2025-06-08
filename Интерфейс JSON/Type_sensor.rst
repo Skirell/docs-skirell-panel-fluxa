@@ -220,68 +220,68 @@ state_topic
                 "page": 1,
                 "blocks": [
                     {
-                    "block": 1,
-                    "type": "sensor",
-                    "data": {
-                        "param_1": "Температура",
-                        "measure": "°C",
-                        "min": "10",
-                        "stage_1": "20",
-                        "stage_2": "30",
-                        "max": "40",
-                        "color_1": "color_blue",
-                        "color_2": "color_green",
-                        "color_3": "color_red",
-                        "state_topic": "panel/sensor/1/state"
-                    }
+                        "block": 1,
+                        "type": "sensor",
+                        "data": {
+                            "param_1": "Температура",
+                            "measure": "°C",
+                            "min": "10",
+                            "stage_1": "20",
+                            "stage_2": "30",
+                            "max": "40",
+                            "color_1": "color_blue",
+                            "color_2": "color_green",
+                            "color_3": "color_red",
+                            "state_topic": "panel/sensor/1/state"
+                        }
                     },
                     {
-                    "block": 2,
-                    "type": "sensor",
-                    "data": {
-                        "param_1": "Влажность",
-                        "measure": "%",
-                        "min": "20",
-                        "stage_1": "40",
-                        "stage_2": "60",
-                        "max": "80",
-                        "color_1": "color_green",
-                        "color_2": "color_yellow",
-                        "color_3": "color_red",
-                        "state_topic": "panel/sensor/2/state"
-                    }
+                        "block": 2,
+                        "type": "sensor",
+                        "data": {
+                            "param_1": "Влажность",
+                            "measure": "%",
+                            "min": "20",
+                            "stage_1": "40",
+                            "stage_2": "60",
+                            "max": "80",
+                            "color_1": "color_green",
+                            "color_2": "color_yellow",
+                            "color_3": "color_red",
+                            "state_topic": "panel/sensor/2/state"
+                        }
                     },
                     {
-                    "block": 3,
-                    "type": "sensor",
-                    "data": {
-                        "param_1": "Углекислый газ",
-                        "measure": "ppm",
-                        "min": "400",
-                        "stage_1": "800",
-                        "stage_2": "1200",
-                        "max": "2000",
-                        "color_1": "color_green",
-                        "color_2": "color_yellow",
-                        "color_3": "color_red",
-                        "state_topic": "panel/sensor/3/state"
-                    }
+                        "block": 3,
+                        "type": "sensor",
+                        "data": {
+                            "param_1": "Углекислый газ",
+                            "measure": "ppm",
+                            "min": "400",
+                            "stage_1": "800",
+                            "stage_2": "1200",
+                            "max": "2000",
+                            "color_1": "color_green",
+                            "color_2": "color_yellow",
+                            "color_3": "color_red",
+                            "state_topic": "panel/sensor/3/state"
+                        }
                     },
                     {
-                    "block": 4,
-                    "type": "sensor",
-                    "data": {
-                        "param_1": "Качество воздуха",
-                        "measure": "ppb",
-                        "min": "0",
-                        "stage_1": "200",
-                        "stage_2": "500",
-                        "max": "1000",
-                        "color_1": "color_green",
-                        "color_2": "color_yellow",
-                        "color_3": "color_red",
-                        "state_topic": "panel/sensor/4/state"
-                    }
+                        "block": 4,
+                        "type": "sensor",
+                        "data": {
+                            "param_1": "Качество воздуха",
+                            "measure": "ppb",
+                            "min": "0",
+                            "stage_1": "200",
+                            "stage_2": "500",
+                            "max": "1000",
+                            "color_1": "color_green",
+                            "color_2": "color_yellow",
+                            "color_3": "color_red",
+                            "state_topic": "panel/sensor/4/state"
+                        }
                     }
                 ]
             }
