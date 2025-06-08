@@ -235,7 +235,7 @@ light_variant_dimmer
 
 Отправляет указанную команду включения или выключения (``payload_on`` / ``payload_off``) на командный MQTT-топик ``OnOff_command_topic``, а также отслеживает состояние устройства через MQTT-топик обратной связи ``OnOff_state_topic`` для обновления элементов интерфейса. В дополнении к этому отправляет значение яркости (``brightness_scale``) на командный MQTT-топик ``brightness_command_topic`` значение яркости, прослушивает MQTT-топик обратной связи ``brightness_state_topic`` для изменения состояния элементов интерфейса.
 
-.. image:: /images/lights/light_variant_dimmer.png
+.. image:: /images/light/light_variant_dimmer.png
 
 Параметры ``variant``:
 
@@ -365,7 +365,7 @@ light_variant_color
 -------------------
 Отправляет указанную команду включения/выключения на командный MQTT-топик, а также прослушивает MQTT-топик обратной связи для изменения состояния элементов интерфейса. В дополнении к этому отправляет значение яркости на командный MQTT-топик значение яркости, прослушивает MQTT-топик обратной связи для изменения состояния элементов интерфейса. Помимо этого, отправляет выбранный цвет на командный MQTT-топик (RGB).
 
-.. image:: /images/lights/light_variant_color.png
+.. image:: /images/light/light_variant_color.png
 
 Параметры ``variant``:
 
@@ -509,7 +509,7 @@ light_variant_temperature
 
 Добавляет регулировку цветовой температуры.
 
-.. image:: /images/lights/light_variant_temperature.png
+.. image:: /images/light/light_variant_temperature.png
 
 Параметры ``variant``:
 
