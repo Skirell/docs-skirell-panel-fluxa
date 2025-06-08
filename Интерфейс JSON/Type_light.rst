@@ -41,7 +41,7 @@ param_1
    :пример-2: ``"param_1":"Освещение"``
    :пример-3: ``"param_1":""``
 
-.. image:: /images/light-param_1.png
+.. image:: /images/light/param_1.png
 .. raw:: html
 
     <br/><br/>
@@ -61,7 +61,7 @@ param_2
    :пример-2: ``"param_2":"Прихожая"``
    :пример-3: ``"param_2":"Торшеры"``
 
-.. image:: /images/light-param_2.png
+.. image:: /images/light/param_2.png
 .. raw:: html
 
     <br/><br/>
@@ -81,7 +81,7 @@ setting_name
    :пример-2: ``"setting_name":"Точки"``
    :пример-3: ``"setting_name":"Подсветка"``
 
-.. image:: /images/light-setting_name.png
+.. image:: /images/light/setting_name.png
 .. raw:: html
 
     <br/><br/>
@@ -101,7 +101,7 @@ icon
    :пример-2: ``"icon":"\uDB86\uDCDE"`` - иконка
    :пример-3: ``"icon":"\uDB84\uDC51"`` - иконка
 
-.. image:: /images/light-icon.png
+.. image:: /images/light/icon.png
 .. raw:: html
 
     <br/><br/>
@@ -145,7 +145,7 @@ light_variant_OnOff
 
 Отправляет команду включения или выключения (``payload_on`` / ``payload_off``) на командный MQTT-топик ``OnOff_command_topic``, а также отслеживает состояние устройства через MQTT-топик обратной связи ``OnOff_state_topic`` для обновления элементов интерфейса.
 
-.. image:: /images/OnOffBlocks.png
+.. image:: /images/light/light_variant_OnOff.png
 
 Параметры ``variant``:
 
@@ -235,7 +235,7 @@ light_variant_dimmer
 
 Отправляет указанную команду включения или выключения (``payload_on`` / ``payload_off``) на командный MQTT-топик ``OnOff_command_topic``, а также отслеживает состояние устройства через MQTT-топик обратной связи ``OnOff_state_topic`` для обновления элементов интерфейса. В дополнении к этому отправляет значение яркости (``brightness_scale``) на командный MQTT-топик ``brightness_command_topic`` значение яркости, прослушивает MQTT-топик обратной связи ``brightness_state_topic`` для изменения состояния элементов интерфейса.
 
-.. image:: /images/lights/brightness_block_and_page.png
+.. image:: /images/lights/light_variant_dimmer.png
 
 Параметры ``variant``:
 
@@ -365,7 +365,7 @@ light_variant_color
 -------------------
 Отправляет указанную команду включения/выключения на командный MQTT-топик, а также прослушивает MQTT-топик обратной связи для изменения состояния элементов интерфейса. В дополнении к этому отправляет значение яркости на командный MQTT-топик значение яркости, прослушивает MQTT-топик обратной связи для изменения состояния элементов интерфейса. Помимо этого, отправляет выбранный цвет на командный MQTT-топик (RGB).
 
-.. image:: /images/lights/color_block_and_page.png
+.. image:: /images/lights/light_variant_color.png
 
 Параметры ``variant``:
 
@@ -509,7 +509,7 @@ light_variant_temperature
 
 Добавляет регулировку цветовой температуры.
 
-.. image:: /images/lights/temp_block_and_page.png
+.. image:: /images/lights/light_variant_temperature.png
 
 Параметры ``variant``:
 
