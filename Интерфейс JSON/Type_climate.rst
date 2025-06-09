@@ -146,10 +146,17 @@ measure
    :пример-1: ``"measure":"°C"``
    :пример-2: ``"measure":"%"``
 
+.. image:: /images/climate/measure.png
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
+
+
 .. _climate-color:
 color
 *******
-   Используется как цвет для активного состояния (все кроме режима ВЫКЛ), в самом блоке и на странице настроек(кроме подтипа ``climate_variant_cond``).
+   Используется как цвет для активного состояния (все кроме режима ВЫКЛ), в самом блоке и на странице настроек (кроме подтипа ``climate_variant_cond``).
 
    :имя поля: ``color``
    :тип объекта: ``String``
@@ -157,13 +164,6 @@ color
    :ограничение строки: 5 символов
    :пример-1: ``"color":"°C"``
    :пример-2: ``"color":"%"``
-
-
-.. image:: /images/climate/measure.png
-.. raw:: html
-
-    <br/><br/>
-    <br/><br/>
 
 
 .. _climate-full_example:
