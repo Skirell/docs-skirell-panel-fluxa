@@ -43,7 +43,7 @@
                         "param_1": "Конд-ер",
                         "param_2": "Зал",
                         "setting_name": "Кондиционер",
-                        "icon": "󱍒",
+                        "icon": "\uDB84\uDF52",
                         "min_target": "15",
                         "max_target": "30",
                         "off_payload": "off",
@@ -55,30 +55,10 @@
                             "mode_state_topic": "panel/climate/1/mode_state",
                             "off_payload": "off",
                             "modes": {
-                                "mode_1": {
-                                "icon": "󱣲",
-                                "title": "Авто",
-                                "color": "color_green",
-                                "payload": "auto"
-                                },
-                                "mode_2": {
-                                "icon": "󰈸",
-                                "title": "Обогрев",
-                                "color": "color_red",
-                                "payload": "heat"
-                                },
-                                "mode_3": {
-                                "icon": "󰜗",
-                                "title": "Охлаждение",
-                                "color": "color_blue",
-                                "payload": "cool"
-                                },
-                                "mode_4": {
-                                "icon": "󰖎",
-                                "title": "Осушение",
-                                "color": "color_yellow",
-                                "payload": "dry"
-                                }
+                                "mode_1": { "icon": "\uDB86\uDCF2", "title": "Авто", "color": "color_green", "payload": "auto" },
+                                "mode_2": { "icon": "\uDB80\uDE38", "title": "Обогрев", "color": "color_red", "payload": "heat" },
+                                "mode_3": { "icon": "\uDB81\uDF17", "title": "Охлаждение", "color": "color_blue", "payload": "cool" },
+                                "mode_4": { "icon": "\uDB81\uDD8E", "title": "Осушение", "color": "color_yellow", "payload": "dry" }
                             },
                             "currentTemp_state_topic": "panel/climate/1/currentTemp_state",
                             "targetTemp_command_topic": "panel/climate/1/targetTemp_command",
@@ -86,26 +66,11 @@
                             "fan_command_topic": "panel/climate/1/fan_command",
                             "fan_state_topic": "panel/climate/1/fan_state",
                             "fan_modes": {
-                                "mode_1": {
-                                "icon": "󱜝",
-                                "payload": "0"
-                                },
-                                "mode_2": {
-                                "icon": "󱑲",
-                                "payload": "1"
-                                },
-                                "mode_3": {
-                                "icon": "󱑳",
-                                "payload": "2"
-                                },
-                                "mode_4": {
-                                "icon": "󱑴",
-                                "payload": "3"
-                                },
-                                "mode_5": {
-                                "icon": "",
-                                "payload": ""
-                                }
+                                "mode_1": { "icon": "\uDB85\uDF1D", "payload": "0" },
+                                "mode_2": { "icon": "\uDB85\uDC72", "payload": "1" },
+                                "mode_3": { "icon": "\uDB85\uDC73", "payload": "2" },
+                                "mode_4": { "icon": "\uDB85\uDC74", "payload": "3" },
+                                "mode_5": { "icon": "", "payload": "" }
                             }
                         }
                     }
@@ -117,7 +82,7 @@
                         "param_1": "Тепл. пол",
                         "param_2": "Детская",
                         "setting_name": "Теплый пол",
-                        "icon": "󱪯",
+                        "icon": "\uDB86\uDEAF",
                         "min_target": "18",
                         "max_target": "30",
                         "measure": "°С",
@@ -132,7 +97,7 @@
                             "targetTemp_state_topic": "panel/climate/2/targetTemp_state",
                             "sensor": {
                                 "sensor_main": 1,
-                                "sensor_1_icon": "󰽕",
+                                "sensor_1_icon": "\uDB83\uDF55",
                                 "sensor_1_measure": "°С",
                                 "sensor_1_state_topic": "panel/climate/2/sensor_1_state",
                                 "sensor_2_icon": "",
@@ -152,7 +117,7 @@
                         "param_1": "Вент-ия",
                         "param_2": "Ванная",
                         "setting_name": "Вентиляция",
-                        "icon": "󰈐",
+                        "icon": "\uDB80\uDE10",
                         "min_target": "0",
                         "max_target": "100",
                         "measure": "%",
@@ -167,13 +132,13 @@
                             "targetTemp_state_topic": "panel/climate/3/targetTemp_state",
                             "sensor": {
                                 "sensor_main": 2,
-                                "sensor_1_icon": "󰟤",
+                                "sensor_1_icon": "\uDB81\uDFE4",
                                 "sensor_1_measure": "ppm",
                                 "sensor_1_state_topic": "panel/climate/3/sensor_1_state",
-                                "sensor_2_icon": "󰖎",
+                                "sensor_2_icon": "\uDB81\uDD8E",
                                 "sensor_2_measure": "%",
                                 "sensor_2_state_topic": "panel/climate/3/sensor_2_state",
-                                "sensor_3_icon": "󰌪",
+                                "sensor_3_icon": "\uDB80\uDF2A",
                                 "sensor_3_measure": "ppb",
                                 "sensor_3_state_topic": "panel/climate/3/sensor_3_state"
                             }
@@ -187,7 +152,7 @@
                         "param_1": "Увлаж-ль",
                         "param_2": "Прихожая",
                         "setting_name": "Увлажнитель",
-                        "icon": "󱂙",
+                        "icon": "\uDB84\uDC99",
                         "min_target": "15",
                         "max_target": "30",
                         "measure": "%",
@@ -202,7 +167,7 @@
                             "targetTemp_state_topic": "panel/climate/4/targetTemp_state",
                             "sensor": {
                                 "sensor_main": 1,
-                                "sensor_1_icon": "󰖎",
+                                "sensor_1_icon": "\uDB81\uDD8E",
                                 "sensor_1_measure": "%",
                                 "sensor_1_state_topic": "panel/climate/4/sensor_1_state",
                                 "sensor_2_icon": "",
@@ -218,3 +183,4 @@
             ]
         }]
     }
+    
