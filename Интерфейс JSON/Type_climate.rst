@@ -209,16 +209,16 @@ climate_variant_cond
 
 Параметры ``variant``:
 
-* :ref:`mode_command_topic` - Командный MQTT-топик для режимов.
-* :ref:`mode_state_topic`- MQTT-топик обратной связи для режимов.
-* :ref:`off_payload`- Команда (Сообщение) для включения.
-* :ref:`modes`- Массив режимов при включенном состоянии.
-* :ref:`currentTemp_state_topic`- MQTT-топик обратной связи текущей температуры.
-* :ref:`targetTemp_command_topic`- Командный MQTT-топик для заданной температуры (уставки).
-* :ref:`targetTemp_state_topic`- MQTT-топик обратной связи для заданной температуры (уставки).
-* :ref:`fan_command_topic`- Командный MQTT-топик для дополнительных режимов.
-* :ref:`fan_state_topic`- MQTT-топик обратной связи для дополнительных режимов.
-* :ref:`fan_modes`- Массив дополнительных режимов.
+* :ref:`climate_variant_cond-mode_command_topic` - Командный MQTT-топик для режимов.
+* :ref:`climate_variant_cond-mode_state_topic`- MQTT-топик обратной связи для режимов.
+* :ref:`climate_variant_cond-off_payload`- Команда (Сообщение) для включения.
+* :ref:`climate_variant_cond-modes`- Массив режимов при включенном состоянии.
+* :ref:`climate_variant_cond-currentTemp_state_topic`- MQTT-топик обратной связи текущей температуры.
+* :ref:`climate_variant_cond-targetTemp_command_topic`- Командный MQTT-топик для заданной температуры (уставки).
+* :ref:`climate_variant_cond-targetTemp_state_topic`- MQTT-топик обратной связи для заданной температуры (уставки).
+* :ref:`climate_variant_cond-fan_command_topic`- Командный MQTT-топик для дополнительных режимов.
+* :ref:`climate_variant_cond-fan_state_topic`- MQTT-топик обратной связи для дополнительных режимов.
+* :ref:`climate_variant_cond-fan_modes`- Массив дополнительных режимов.
 
 .. _climate_variant_cond-mode_command_topic:
 mode_command_topic
@@ -401,13 +401,13 @@ climate_variant_thermostat
 
 Параметры ``variant``:
 
-* :ref:`OnOff_command_topic` - Командный MQTT-топик для отправки команды.
-* :ref:`OnOff_state_topic`- MQTT-топик обратной связи для получения состояния.
-* :ref:`payload_on`- Команда (Сообщение) для включения.
-* :ref:`payload_off`- Команда (Сообщение) для выключения.
-* :ref:`targetTemp_command_topic`- Командный MQTT-топик для заданной температуры (уставки).
-* :ref:`targetTemp_state_topic`-  MQTT-топик обратной связи для заданной температуры (уставки).
-* :ref:`sensor`- Массив с датчиками.
+* :ref:`climate_variant_thermostat-OnOff_command_topic` - Командный MQTT-топик для отправки команды.
+* :ref:`climate_variant_thermostat-OnOff_state_topic`- MQTT-топик обратной связи для получения состояния.
+* :ref:`climate_variant_thermostat-payload_on`- Команда (Сообщение) для включения.
+* :ref:`climate_variant_thermostat-payload_off`- Команда (Сообщение) для выключения.
+* :ref:`climate_variant_thermostat-targetTemp_command_topic`- Командный MQTT-топик для заданной температуры (уставки).
+* :ref:`climate_variant_thermostat-targetTemp_state_topic`-  MQTT-топик обратной связи для заданной температуры (уставки).
+* :ref:`climate_variant_thermostat-sensor`- Массив с датчиками.
 
 .. _climate_variant_thermostat-OnOff_command_topic:
 OnOff_command_topic
@@ -479,7 +479,7 @@ targetTemp_state_topic
 sensor
 *******************
    Массив с дополнительными датчиками. Применяется в случае, когда с основными данными устройства пользователь хочет видеть параметры с дополнительных датчиков (до 3-х датчиков). В случае если датчики не нужны, параметры массива остаются пустыми. В массиве указываются такие параметры как:
-   
+
     * :ref:`sensor_main` — Обозначение главного датчика, данные которого будут выводиться на сам блок устройства.
     * :ref:`sensor_N_icon` — Иконка, отображаемая у датчика внутри страницы настроек.
     * :ref:`sensor_N_measure` — Обозначение, отображаемое у датчика внутри страницы настроек.
