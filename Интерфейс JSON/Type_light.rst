@@ -239,13 +239,13 @@ light_variant_dimmer
 
 Параметры ``variant``:
 
-* :ref:`light_variant_dimmer-OnOff_command_topic`: Командный MQTT-топик для отправки команды (String, обязательно).
-* :ref:`light_variant_dimmer-OnOff_state_topic`: MQTT-топик обратной связи для получения состояния (String, обязательно).
-* :ref:`light_variant_dimmer-payload_on`: Команда(Сообщение) для включения (String, обязательно).
-* :ref:`light_variant_dimmer-payload_off`: Команда(Сообщение) для выключения (String, обязательно).
-* :ref:`light_variant_dimmer-brightness_command_topic`: Командный MQTT-топик для отправки яркости (String, обязательно).
-* :ref:`light_variant_dimmer-brightness_state_topic`: MQTT-топик обратной связи для получения яркости (String, обязательно).
-* :ref:`light_variant_dimmer-brightness_scale`: Максимальное значение яркости (Integer, обязательно).
+* :ref:`light_variant_dimmer-OnOff_command_topic`: Командный MQTT-топик для отправки команды.
+* :ref:`light_variant_dimmer-OnOff_state_topic`: MQTT-топик обратной связи для получения состояния.
+* :ref:`light_variant_dimmer-payload_on`: Команда (Сообщение) для включения.
+* :ref:`light_variant_dimmer-payload_off`: Команда (Сообщение) для выключения.
+* :ref:`light_variant_dimmer-brightness_command_topic`: Командный MQTT-топик для отправки яркости.
+* :ref:`light_variant_dimmer-brightness_state_topic`: MQTT-топик обратной связи для получения яркости.
+* :ref:`light_variant_dimmer-brightness_scale`: Максимальное значение яркости.
 
 .. _light_variant_dimmer-OnOff_command_topic:
 OnOff_command_topic
@@ -261,7 +261,7 @@ OnOff_command_topic
 .. _light_variant_dimmer-OnOff_state_topic:
 OnOff_state_topic
 *****************
-   MQTT-топик обратной связи, куда приходят сообщения включения и выключения.
+   MQTT-топик обратной связи, откуда приходят сообщения состояния (включения и выключения).
 
    :имя поля: ``OnOff_state_topic``
    :тип объекта: ``String``
