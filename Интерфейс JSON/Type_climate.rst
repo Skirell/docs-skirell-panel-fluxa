@@ -168,7 +168,11 @@ color
    :пример-1: ``"color":"color_red"``
    :пример-2: ``"color":"color_green"``
 
-ДОБАВИТЬ ТАБЛИЦУ ЦВЕТОВ
+.. image:: /images/climate/table_color.png
+.. raw:: html
+
+    <br/><br/>
+    <br/><br/>
 
 .. _climate-variant_type:
 variant_type
