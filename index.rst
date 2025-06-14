@@ -43,4 +43,4 @@ Fluxa Docs documentation
    :maxdepth: 2
    :hidden:
    
-   Интерфейс панели/test
+   Предварительная настройка панели/test
