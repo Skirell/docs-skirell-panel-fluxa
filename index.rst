@@ -5,27 +5,34 @@
 
 Fluxa Docs documentation
 ========================
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Подключение панели:
+
+   QWE/Connection
    
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Интерфейс панели:
    
-   /Интерфейс панели/Navigation
-   /Интерфейс панели/Using_scene
-   /Интерфейс панели/Using_sensor
-   /Интерфейс панели/Using_light
-   /Интерфейс панели/Using_climate
-   /Интерфейс панели/Using_cover
+   Интерфейс панели/Navigation
+   Интерфейс панели/Using_scene
+   Интерфейс панели/Using_sensor
+   Интерфейс панели/Using_light
+   Интерфейс панели/Using_climate
+   Интерфейс панели/Using_cover
 
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Интерфейс JSON:
 
-   /Интерфейс JSON/JSON
-   /Интерфейс JSON/Type_scene
-   /Интерфейс JSON/Type_sensor
-   /Интерфейс JSON/Type_light
-   /Интерфейс JSON/Type_climate
-   /Интерфейс JSON/Type_cover
+   Интерфейс JSON/JSON
+   Интерфейс JSON/Type_scene
+   Интерфейс JSON/Type_sensor
+   Интерфейс JSON/Type_light
+   Интерфейс JSON/Type_climate
+   Интерфейс JSON/Type_cover
