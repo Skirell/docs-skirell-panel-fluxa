@@ -11,9 +11,7 @@ Fluxa Docs documentation
    :hidden:
    :caption: Предварительная настройка:
 
-   Предварительная настройка панели/Power_connection
-   Предварительная настройка панели/Network_connection
-   Предварительная настройка панели/Mqtt_connection
+   Предварительная настройка панели/Connection
    
 .. toctree::
    :maxdepth: 2
