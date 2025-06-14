@@ -9,12 +9,32 @@ Fluxa Docs documentation
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Интерфейс файла JSON:
+   :caption: Предварительная настройка:
 
-   Интерфейс файла JSON/JSON
-   Интерфейс файла JSON/Type_scene
-   Интерфейс файла JSON/Type_sensor
-   Интерфейс файла JSON/Type_light
-   Интерфейс файла JSON/Type_cover
-   Интерфейс файла JSON/Type_climate
-   Интерфейс файла JSON/Type_cover
+   Предварительная настройка панели/Power_connection
+   Предварительная настройка панели/Network_connection
+   Предварительная настройка панели/Mqtt_connection
+   
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Интерфейс JSON:
+
+   Интерфейс JSON/JSON
+   Интерфейс JSON/Type_scene
+   Интерфейс JSON/Type_sensor
+   Интерфейс JSON/Type_light
+   Интерфейс JSON/Type_climate
+   Интерфейс JSON/Type_cover
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Интерфейс панели:
+   
+   Интерфейс панели/Navigation
+   Интерфейс панели/Using_scene
+   Интерфейс панели/Using_sensor
+   Интерфейс панели/Using_light
+   Интерфейс панели/Using_climate
+   Интерфейс панели/Using_cover
