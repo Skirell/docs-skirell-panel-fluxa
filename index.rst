@@ -11,9 +11,10 @@ Fluxa Docs documentation
    :hidden:
    :caption: Интерфейс панели:
    
-   /Интерфейс панели/Navigation
-   /Интерфейс панели/Using_scene
-   /Интерфейс панели/Using_sensor
-   /Интерфейс панели/Using_light
-   /Интерфейс панели/Using_climate
-   /Интерфейс панели/Using_cover
+   Интерфейс JSON/JSON
+   Интерфейс панели/Navigation
+   Интерфейс панели/Using_scene
+   Интерфейс панели/Using_sensor
+   Интерфейс панели/Using_light
+   Интерфейс панели/Using_climate
+   Интерфейс панели/Using_cover
