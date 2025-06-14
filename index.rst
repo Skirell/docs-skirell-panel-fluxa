@@ -38,3 +38,9 @@ Fluxa Docs documentation
    Интерфейс панели/Using_light
    Интерфейс панели/Using_climate
    Интерфейс панели/Using_cover
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   
+   Интерфейс панели/test
