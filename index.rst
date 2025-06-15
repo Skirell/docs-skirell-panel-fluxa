@@ -13,7 +13,6 @@ Fluxa Docs documentation
    
    Подключение панели/Connection
 
-
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -30,7 +29,7 @@ Fluxa Docs documentation
    :maxdepth: 2
    :hidden:
    :caption: Интерфейс JSON:
-
+   
    Интерфейс JSON/JSON
    Интерфейс JSON/Type_scene
    Интерфейс JSON/Type_sensor
