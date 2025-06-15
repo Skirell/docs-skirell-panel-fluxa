@@ -33,6 +33,6 @@ Fluxa Docs documentation
 .. toctree:: 
    :maxdepth: 2
    :hidden:
-   :caption: Тест:
+   :caption: Предварительная настройка:
 
-   Тест теста/тест
+   Предварительная настройка/тест
