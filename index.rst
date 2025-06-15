@@ -12,6 +12,8 @@ Fluxa Docs documentation
    :caption: Подключение панели:
    
    Подключение панели/Connection
+   Интерфейс JSON/JSON
+
 
 .. toctree::
    :maxdepth: 2
