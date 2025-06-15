@@ -11,7 +11,7 @@ Fluxa Docs documentation
    :hidden:
    :caption: Подключение панели:
    
-   Подключение панели/Connection
+   /Подключение панели/Connection
    Интерфейс JSON/JSON
 
 
