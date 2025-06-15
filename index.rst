@@ -6,6 +6,13 @@
 Fluxa Docs documentation
 ========================
 
+.. toctree:: 
+   :maxdepth: 2
+   :hidden:
+   :caption: Предварительная настройка:
+
+   Предварительная настройка/тест
+
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -29,10 +36,3 @@ Fluxa Docs documentation
    Интерфейс JSON/Type_light
    Интерфейс JSON/Type_climate
    Интерфейс JSON/Type_cover
-
-.. toctree:: 
-   :maxdepth: 2
-   :hidden:
-   :caption: Предварительная настройка:
-
-   Предварительная настройка/тест
