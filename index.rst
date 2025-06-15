@@ -9,9 +9,10 @@ Fluxa Docs documentation
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :caption: Подключение панели:
 
-   QWE/Connection
-   
+   Подключение панели/Connection
+
 .. toctree::
    :maxdepth: 2
    :hidden:
