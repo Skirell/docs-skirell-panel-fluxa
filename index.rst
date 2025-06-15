@@ -11,8 +11,7 @@ Fluxa Docs documentation
    :hidden:
    :caption: Подключение панели:
    
-   /Подключение панели/Connection
-   Интерфейс JSON/JSON
+   Подключение панели/Connection
 
 
 .. toctree::
