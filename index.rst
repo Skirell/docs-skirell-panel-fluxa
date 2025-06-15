@@ -20,11 +20,7 @@ Fluxa Docs documentation
    :caption: Интерфейс панели:
    
    Интерфейс панели/Navigation
-   Интерфейс панели/Using_scene
-   Интерфейс панели/Using_sensor
-   Интерфейс панели/Using_light
-   Интерфейс панели/Using_climate
-   Интерфейс панели/Using_cover
+   Интерфейс панели/управление
 
 .. toctree::
    :maxdepth: 2
