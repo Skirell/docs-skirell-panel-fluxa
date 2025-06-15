@@ -35,4 +35,4 @@ Fluxa Docs documentation
    :hidden:
    :caption: Тест:
 
-   
+   Тест теста/тест
