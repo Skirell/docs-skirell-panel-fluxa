@@ -10,7 +10,7 @@ Fluxa Docs documentation
    :maxdepth: 2
    :hidden:
    :caption: Подключение панели:
-
+   
    Подключение панели/Connection
 
 .. toctree::
