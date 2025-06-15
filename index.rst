@@ -16,11 +16,6 @@ Fluxa Docs documentation
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Интерфейс JSON:
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: Интерфейс панели:
    
    Интерфейс панели/Navigation
