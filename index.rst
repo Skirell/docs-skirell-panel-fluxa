@@ -9,7 +9,7 @@ Fluxa Docs documentation
 .. toctree:: 
    :maxdepth: 2
    :hidden:
-   :caption: Предварительная настройка:
+   :caption: Характеристики панели:
 
    Панель/характеристики
 
