@@ -597,17 +597,11 @@ sensor
                             "payload_off": "0",
                             "targetTemp_command_topic": "panel/climate/2/targetTemp_command",
                             "targetTemp_state_topic": "panel/climate/2/targetTemp_state",
-                            "sensor": {
-                                "sensor_main": 1,
-                                "sensor_1_icon": "\uDB83\uDF55",
-                                "sensor_1_measure": "°С",
-                                "sensor_1_state_topic": "panel/climate/2/sensor_1_state",
-                                "sensor_2_icon": "",
-                                "sensor_2_measure": "",
-                                "sensor_2_state_topic": "",
-                                "sensor_3_icon": "",
-                                "sensor_3_measure": "",
-                                "sensor_3_state_topic": ""
+                            "sensor_main": 1,
+                            "sensors": {
+                                "sensor_1": { "icon": "\uDB83\uDF55", "measure": "°С", "state_topic": "panel/climate/2/sensor_1_state" },
+                                "sensor_2": { "icon": "", "measure": "", "state_topic": "" },
+                                "sensor_3": { "icon": "", "measure": "", "state_topic": "" }
                             }
                         }
                     }
@@ -632,17 +626,11 @@ sensor
                             "payload_off": "0",
                             "targetTemp_command_topic": "panel/climate/3/targetTemp_command",
                             "targetTemp_state_topic": "panel/climate/3/targetTemp_state",
-                            "sensor": {
-                                "sensor_main": 2,
-                                "sensor_1_icon": "\uDB81\uDFE4",
-                                "sensor_1_measure": "ppm",
-                                "sensor_1_state_topic": "panel/climate/3/sensor_1_state",
-                                "sensor_2_icon": "\uDB81\uDD8E",
-                                "sensor_2_measure": "%",
-                                "sensor_2_state_topic": "panel/climate/3/sensor_2_state",
-                                "sensor_3_icon": "\uDB80\uDF2A",
-                                "sensor_3_measure": "ppb",
-                                "sensor_3_state_topic": "panel/climate/3/sensor_3_state"
+                            "sensor_main": 2,
+                            "sensors": {
+                                "sensor_1": { "icon": "\uDB81\uDFE4", "measure": "ppm", "state_topic": "panel/climate/3/sensor_1_state" },
+                                "sensor_2": { "icon": "\uDB81\uDD8E", "measure": "%", "state_topic": "panel/climate/3/sensor_2_state" },
+                                "sensor_3": { "icon": "\uDB80\uDF2A", "measure": "ppb", "state_topic": "panel/climate/3/sensor_3_state" }
                             }
                         }
                     }
@@ -667,17 +655,11 @@ sensor
                             "payload_off": "0",
                             "targetTemp_command_topic": "panel/climate/4/targetTemp_command",
                             "targetTemp_state_topic": "panel/climate/4/targetTemp_state",
-                            "sensor": {
-                                "sensor_main": 1,
-                                "sensor_1_icon": "\uDB81\uDD8E",
-                                "sensor_1_measure": "%",
-                                "sensor_1_state_topic": "panel/climate/4/sensor_1_state",
-                                "sensor_2_icon": "",
-                                "sensor_2_measure": "",
-                                "sensor_2_state_topic": "",
-                                "sensor_3_icon": "",
-                                "sensor_3_measure": "",
-                                "sensor_3_state_topic": ""
+                            "sensor_main": 1,
+                            "sensors": {
+                                "sensor_1": { "icon": "\uDB81\uDD8E", "measure": "%", "state_topic": "panel/climate/4/sensor_1_state" },
+                                "sensor_2": { "icon": "", "measure": "", "state_topic": "" },
+                                "sensor_3": { "icon": "", "measure": "", "state_topic": "" }
                             }
                         }
                     }
