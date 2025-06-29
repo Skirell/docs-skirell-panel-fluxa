@@ -477,64 +477,53 @@ targetTemp_state_topic
    :ограничение строки: Нет ограничения
    :пример: ``"targetTemp_state_topic":"изменить"``
 
+.. _climate_variant_thermostat-sensor_main:
+sensor_main
+*******************
+   Обозначение главного датчика, данные которого будут выводиться на сам блок устройства. Если датчиков нету, укажите значение ``"sensor_main":"0"``.
+
+   :имя поля: ``sensor_main``
+   :тип объекта: ``Integer``
+   :наличие значения: Обязательно
+   :ограничение строки: Нет ограничения
+   :пример: ``"sensor_main":"1"``
+
 .. _climate_variant_thermostat-sensor:
 sensor
 *******************
    Массив где указываются датчики устройства. Возможно установить от 0 до 3 датчиков. В случае если не нужно отображать датчики, просто оставьте поля пустыми и в параметре ``sensor_main`` установить значение 0.
-
-    * :ref:`sensor_main` — Обозначение главного датчика, данные которого будут выводиться на сам блок устройства.
-    * :ref:`sensor_N_icon` — Иконка, отображаемая у датчика внутри страницы настроек.
-    * :ref:`sensor_N_measure` — Обозначение, отображаемое у датчика внутри страницы настроек.
-    * :ref:`sensor_N_state_topic` — MQTT-топик обратной связи, откуда приходят сообщения со значением соответствующего датчика.
 
    :имя поля: ``sensor``
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
 
+    * ``icon`` — Иконка, отображаемая у датчика внутри страницы настроек.
+    * ``measure`` — Обозначение, отображаемое у датчика внутри страницы настроек.
+    * ``state_topic`` — MQTT-топик обратной связи, откуда приходят сообщения со значением соответствующего датчика.
+
 Пример для 3-х датчиков::
 
-   "sensor": {
-        "sensor_main": 2,
-        "sensor_1_icon": "\uDB81\uDFE4",
-        "sensor_1_measure": "ppm",
-        "sensor_1_state_topic": "panel/climate/3/sensor_1_state",
-        "sensor_2_icon": "\uDB81\uDD8E",
-        "sensor_2_measure": "%",
-        "sensor_2_state_topic": "panel/climate/3/sensor_2_state",
-        "sensor_3_icon": "\uDB80\uDF2A",
-        "sensor_3_measure": "ppb",
-        "sensor_3_state_topic": "panel/climate/3/sensor_3_state"
+   "sensors": {
+        "sensor_1": { "icon": "\uDB81\uDFE4", "measure": "ppm", "state_topic": "panel/climate/3/sensor_1_state" },
+        "sensor_2": { "icon": "\uDB81\uDD8E", "measure": "%", "state_topic": "panel/climate/3/sensor_2_state" },
+        "sensor_3": { "icon": "\uDB80\uDF2A", "measure": "ppb", "state_topic": "panel/climate/3/sensor_3_state" }
     }
 
 Пример для 1-го датчика::
 
-   "sensor": {
-        "sensor_main": 1,
-        "sensor_1_icon": "\uDB81\uDFE4",
-        "sensor_1_measure": "ppm",
-        "sensor_1_state_topic": "panel/climate/3/sensor_1_state",
-        "sensor_2_icon": "",
-        "sensor_2_measure": "",
-        "sensor_2_state_topic": "",
-        "sensor_3_icon": "",
-        "sensor_3_measure": "",
-        "sensor_3_state_topic": ""
+   "sensors": {
+        "sensor_1": { "icon": "\uDB83\uDF55", "measure": "°С", "state_topic": "panel/climate/2/sensor_1_state" },
+        "sensor_2": { "icon": "", "measure": "", "state_topic": "" },
+        "sensor_3": { "icon": "", "measure": "", "state_topic": "" }
     }
 
 Пример для устройства, не имеющего дополнительные датчики::
 
-   "sensor": {
-        "sensor_main": 0,
-        "sensor_1_icon": "",
-        "sensor_1_measure": "",
-        "sensor_1_state_topic": "",
-        "sensor_2_icon": "",
-        "sensor_2_measure": "",
-        "sensor_2_state_topic": "",
-        "sensor_3_icon": "",
-        "sensor_3_measure": "",
-        "sensor_3_state_topic": ""
+   "sensors": {
+        "sensor_1": { "icon": "", "measure": "", "state_topic": "" },
+        "sensor_2": { "icon": "", "measure": "", "state_topic": "" },
+        "sensor_3": { "icon": "", "measure": "", "state_topic": "" }
     }
 
 .. _climate-full_example:
