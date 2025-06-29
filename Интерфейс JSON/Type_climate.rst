@@ -233,7 +233,7 @@ mode_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"mode_command_topic":"изменить"``
+   :пример: ``"mode_command_topic":"panel/climate/1/mode_command"``
 
 
 .. _climate_variant_cond-mode_state_topic:
@@ -245,7 +245,7 @@ mode_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"mode_state_topic":"изменить"``
+   :пример: ``"mode_state_topic":"panel/climate/1/mode_state"``
 
 .. _climate_variant_cond-off_payload:
 off_payload
@@ -268,7 +268,7 @@ currentTemp_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"currentTemp_state_topic":"изменить"``
+   :пример: ``"currentTemp_state_topic":"panel/climate/1/currentTemp_state"``
 
 .. _climate_variant_cond-targetTemp_command_topicc:
 targetTemp_command_topic
@@ -279,7 +279,7 @@ targetTemp_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"targetTemp_command_topic":"изменить"``
+   :пример: ``"targetTemp_command_topic":"panel/climate/1/targetTemp_command"``
 
 .. _climate_variant_cond-targetTemp_state_topic:
 targetTemp_state_topic
@@ -290,7 +290,7 @@ targetTemp_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"targetTemp_state_topic":"изменить"``
+   :пример: ``"targetTemp_state_topic":"panel/climate/1/targetTemp_state"``
 
 .. _climate_variant_cond-fan_command_topic:
 fan_command_topic
@@ -421,7 +421,7 @@ OnOff_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_command_topic":"изменить"``
+   :пример: ``"OnOff_command_topic":"panel/climate/2/OnOff_command"``
 
 .. _climate_variant_thermostat-OnOff_state_topic:
 OnOff_state_topic
@@ -432,7 +432,7 @@ OnOff_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"OnOff_state_topic":"изменить"``
+   :пример: ``"OnOff_state_topic":"panel/climate/2/OnOff_state"``
 
 .. _climate_variant_thermostat-payload_on:
 payload_on
@@ -443,7 +443,7 @@ payload_on
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"payload_on":"изменить"``
+   :пример: ``"payload_on":"1"``
 
 .. _climate_variant_thermostat-payload_off:
 payload_off
@@ -454,7 +454,7 @@ payload_off
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"payload_off":"изменить"``
+   :пример: ``"payload_off":"0"``
 
 .. _climate_variant_thermostat-targetTemp_command_topic:
 targetTemp_command_topic
@@ -465,7 +465,7 @@ targetTemp_command_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"targetTemp_command_topic":"изменить"``
+   :пример: ``"targetTemp_command_topic":"panel/climate/2/targetTemp_command"``
 
 .. _climate_variant_thermostat-targetTemp_state_topic:
 targetTemp_state_topic
@@ -476,7 +476,7 @@ targetTemp_state_topic
    :тип объекта: ``String``
    :наличие значения: Обязательно
    :ограничение строки: Нет ограничения
-   :пример: ``"targetTemp_state_topic":"изменить"``
+   :пример: ``"targetTemp_state_topic":"panel/climate/2/targetTemp_state"``
 
 .. _climate_variant_thermostat-sensor_main:
 sensor_main
