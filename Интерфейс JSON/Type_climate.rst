@@ -409,6 +409,7 @@ climate_variant_thermostat
 * :ref:`climate_variant_thermostat-payload_off`- Команда (Сообщение) для выключения.
 * :ref:`climate_variant_thermostat-targetTemp_command_topic`- Командный MQTT-топик для заданной температуры (уставки).
 * :ref:`climate_variant_thermostat-targetTemp_state_topic`-  MQTT-топик обратной связи для заданной температуры (уставки).
+* :ref:`climate_variant_thermostat-sensor_main`- Номер главного датчика.
 * :ref:`climate_variant_thermostat-sensor`- Массив с датчиками.
 
 .. _climate_variant_thermostat-OnOff_command_topic:
@@ -480,7 +481,7 @@ targetTemp_state_topic
 .. _climate_variant_thermostat-sensor_main:
 sensor_main
 *******************
-   Обозначение главного датчика, данные которого будут выводиться на сам блок устройства. Если датчиков нету, укажите значение ``"sensor_main":"0"``.
+   Номер главного датчика, данные которого будут выводиться на сам блок устройства. Если датчиков нету, укажите значение ``"sensor_main":"0"``.
 
    :имя поля: ``sensor_main``
    :тип объекта: ``Integer``
