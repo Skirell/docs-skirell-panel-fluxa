@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тип scene (Сценарий) &mdash; документация Fluxa Docs </title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=372fde1a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=cd1d70c9"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="Тип sensor (Датчики)" href="Type_sensor.html" />
+    <link rel="prev" title="Конфигурация файла JSON" href="JSON.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Fluxa Docs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Интерфейс:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="JSON.html">Конфигурация файла JSON</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Тип scene (Сценарий)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Type_sensor.html">Тип sensor (Датчики)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Type_light.html">Тип light (Свет)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fluxa Docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Тип scene (Сценарий)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Интерфейс/Type_scene.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scene">
+<h1>Тип scene (Сценарий)<a class="headerlink" href="#scene" title="Ссылка на этот заголовок"></a></h1>
+<p>Блок scene отправляет команду на сервер при нажатии, не ожидая ответа и не открывая страницу настроек. Параметры:</p>
+<ul class="simple">
+<li><p>param_1: Назначение (String, может быть пустым).</p></li>
+<li><p>param_2: Локация (String, может быть пустым).</p></li>
+<li><p>param_3: Название (String, обязательно).</p></li>
+<li><p>icon: Иконка (String, Unicode, обязательно).</p></li>
+<li><p>command_topic: Топик для отправки команды на сервер (String, обязательно).</p></li>
+<li><p>payload: Сообщение, отправляемое на сервер (String, обязательно).</p></li>
+</ul>
+<p>Пример:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;block&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;scene&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data&quot;</span><span class="p">:</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;param_1&quot;</span><span class="p">:</span> <span class="s2">&quot;Сцена&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;param_2&quot;</span><span class="p">:</span> <span class="s2">&quot;Гостинная&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;param_3&quot;</span><span class="p">:</span> <span class="s2">&quot;Вечеринка&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\uDB84\uDC56</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;command_topic&quot;</span><span class="p">:</span> <span class="s2">&quot;panel/scenes/1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Пример:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;block&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;scene&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data&quot;</span><span class="p">:</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;param_1&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;param_2&quot;</span><span class="p">:</span> <span class="s2">&quot;Режим&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;param_3&quot;</span><span class="p">:</span> <span class="s2">&quot;Чтение&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\uDB84\uDC56</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;command_topic&quot;</span><span class="p">:</span> <span class="s2">&quot;panel/scenes/2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<img alt="../_images/block_scene.png" src="../_images/block_scene.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="JSON.html" class="btn btn-neutral float-left" title="Конфигурация файла JSON" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="Type_sensor.html" class="btn btn-neutral float-right" title="Тип sensor (Датчики)" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Skirell. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
